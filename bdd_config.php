@@ -4,8 +4,15 @@
     $query1 = $pdo->prepare('CREATE TABLE IF NOT EXISTS bookclub.root (
         id_root int not null auto_increment,
         pseudo_root varchar(255) not null,
-        mdp_root varchar(255) not null,
+        role varchar(255) not null,
         mail_root varchar(255) not null,
+        mdp_root varchar(255) not null,
+        pays varchar(255) not null,
+        sex varchar(255) not null,
+        age int not null,
+        date_creation DATE not null,
+        photo varchar(255) null,
+        bio text null,
         PRIMARY KEY (id_root));');
     $query1->execute();
 
