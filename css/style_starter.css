@@ -1,0 +1,181 @@
+.windows{
+  padding-top: 0;
+  margin-top: 0;
+  background-color: white;
+  height: 100%;
+}
+
+.content{
+  background-color: white;
+  border: 2px solid;
+  border-color: rgb(11, 83, 11);
+  border-radius: 7px;
+  margin-top: 2%;
+  width: 500px;
+  height: inherit;
+}
+
+
+.logo{
+  height: 40%;
+  width: auto;
+  padding-left: 29%;
+}
+.logo_form{
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+
+
+
+
+.visiteur_bouton, .connexion_bouton, .inscription_bouton{
+  border: none;
+  color: rgb(2, 41, 2);
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+  width:50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-right: auto;
+  display: inline-block;
+  position: relative;
+} 
+.visiteur_bouton, .connexion_bouton, .inscription_bouton{
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.connexion_bouton{
+  margin-bottom: 15%;
+}
+.visiteur_bouton:after, .connexion_bouton:after, .inscription_bouton:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 15px;
+  right: 95%;
+  transition: 0.5s;
+}
+.visiteur_bouton:hover, .connexion_bouton:hover, .inscription_bouton:hover{
+  padding-right: 8px;
+  padding-left:24px;
+}
+.visiteur_bouton:hover:after, .connexion_bouton:hover:after, .inscription_bouton:hover:after {
+  opacity: 1;
+  right: 85%;
+}
+.visiteur_bouton:focus, .inscription_bouton:focus, .connexion_bouton:focus{outline: 0;}
+
+
+
+
+
+.title_page{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  font-size: 30px;
+}
+
+.input_connexion {
+  display: block;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.input_inscription {
+  margin: 5px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+input{
+  margin-bottom: 5%;
+  border: none;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+form{
+  margin-top: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.age{
+  margin-left: 15px;
+}
+
+
+.valider_bouton {
+  background: transparent;
+  width: 150px;
+  height: 50px;
+  color: rgb(107, 105, 6);
+  border: 1px solid rgb(3, 66, 35);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5%;
+  margin-left: 33%;
+}
+.valider_bouton:hover, .valider_bouton:focus {
+  color: rgb(185, 158, 5);
+}
+.valider_bouton:focus{outline: 0;}
+
+
+
+.mdp{
+  background-color: transparent;
+  color: rgb(104, 89, 5);
+  text-align: right;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  margin-left: 40%;
+  border: none;
+}
+.mdp:hover{
+  color: rgb(3, 66, 35);
+  border: none;
+}
+.mdp:focus{outline: 0;}
+
+
+
+
+
+.div_buttons{
+  margin: 7%;
+}
+.inscription_boutons{
+  background: transparent;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: rgb(107, 105, 6);
+  border: 1px solid rgb(3, 66, 35);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.inscription_boutons:hover, .inscription_boutons:focus {
+  color: rgb(3, 66, 35);
+}
+.inscription_boutons:focus{outline: 0;}

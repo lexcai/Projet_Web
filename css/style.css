@@ -1,0 +1,277 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(245, 253, 180);
+}
+
+.bouton_style{
+  color: rgb(71, 75, 48);
+  background-color: rgb(247, 255, 188);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  font-size: x-small;
+  height: 30px;
+}
+
+.fullscreen_bg {
+  background-image: url("images/bg.jpg");
+  height: 80%;
+
+  /* image centrée en placée parfaitement */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body_box{
+  height: 80%;
+}
+
+.nav_bar_style{
+  background-color: black;
+  box-shadow: rgb(218, 217, 182);
+  border-top: 0;
+  width: 80%;
+  height: 13%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.logo{
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}
+.links_position{
+  margin-left: 30%;
+  margin-top: 0%;
+}
+.link_disable{
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: medium;
+}
+.link_enable{
+  color: rgb(245, 253, 180);
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: medium;
+}
+.link_enable:hover{
+  color: rgb(128, 134, 90);
+}
+
+
+.input_search_box{
+  height: auto;
+  margin-left: 15%;
+  margin-bottom: 5px;
+  width: 80%;
+}
+.input_search_style{
+  height: 30px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 11px;
+  border: none;
+  background-color: rgb(247, 255, 188);
+}
+
+.valider_bouton{
+  margin-top: 3px;
+  margin-left: 1%;
+  border: none;
+  border-left: solid 1px black;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 10%; 
+}
+.valider_bouton:hover{
+  color: black;
+}
+
+
+/*-----------------------------------------------*/
+/*message de bienvenue*/
+.message_box{
+  padding: 15px;
+  width: 75%;
+  margin-top: 13%;
+  margin-left: 14%;
+}
+.welcome{
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: small;  
+  color: rgb(245, 253, 180);
+  text-align: left;
+}
+.text{
+  margin-top: 2%;
+  letter-spacing: 3px;
+  font-size: 40px;
+  color: rgb(245, 253, 180);
+  text-align: left;
+  
+}
+
+/*container pour les éléments de la page home*/
+
+.content_box_home{
+  margin-top: 10%;
+  height: 1500px;
+  width: 80%;
+  background-color: rgb(248, 255, 209);
+  border: solid 4px rgb(237, 245, 177);
+}
+
+.content{
+  margin-top: 10%;
+  height: 1500px;
+  width: 80%;
+  background-color: rgb(248, 255, 209);
+  border: solid 4px rgb(237, 245, 177);
+}
+
+hr{
+  border: none;
+  border-top: 3px double rgb(47, 83, 55);
+  color: rgb(47, 83, 55);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+h1{
+  margin: 3%;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: rgb(3, 54, 4);
+  text-align: center;
+}
+
+#selection{
+  height: 200px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+.selection1{
+  margin-top: 25%;
+}
+
+/*-----------------------------------------------*/
+/*page profil*/
+
+
+.left_box{
+  background-color: blueviolet;
+}
+.right_box{
+  background-color: blue;
+}
+
+.items_box{
+  display: block;
+  width: initial;
+}
+.titles{
+  color: rgb(3, 54, 4);
+  font-size: medium;
+}
+
+
+
+
+/*boite de gauche*/
+
+.edit_profil, .deconnexion{
+  border: solid 1px gray;
+  border-radius: 10%;
+  margin-top: 2px;
+}
+.deconnexion:hover, .edit_profil:hover{
+  color: black;
+}
+.pic_parent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10%;
+  margin-bottom: 2%;
+  border: solid 1px black;
+}
+.profil_pic{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  object-fit: cover;
+}
+.profil_pic:hover{
+  opacity: 30%;
+}
+.edit_pic_button{
+  background-color: transparent;
+  opacity: 0%;
+  background-image: url(images/edit.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+.edit_pic_button:hover{
+  opacity: 100%;
+}
+
+#new_pic{
+  background-color: aliceblue;
+  margin-top: 3%;
+  border: solid 1px gray;
+  padding: 10px;
+}
+
+
+.pseudo{
+  display: inline-block;
+  width: auto;
+  font-size: large;
+  margin-left: 10%;
+}
+.icon_gender{
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.three_infos{
+  margin-left: 10%;
+  margin-top: 5px;
+  width: max-content;
+  border: solid 1px gray;
+  border-left: none;
+  border-right: none;
+}
+.three_infos_style{
+  margin: 5px;
+  color: rgb(3, 54, 4);
+  text-align: center;
+  font-size: small;
+}
+
+.bio_box{
+  color: rgb(3, 54, 4);
+  margin: 10%;
+}
+#bio_space{
+  border: solid 1px gray;
+}
+#save_bio{
+  border: solid 1px gray;
+  border-radius: 10%;
+}
+.save_bio:hover{
+  color: black;
+}
+
+
+/*boite de droite*/
+
+
