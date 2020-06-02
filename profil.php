@@ -145,7 +145,7 @@ include_once('bdd.php');
                         <h1>Statistiques de votre bibliothèque</h1>
                         
                             
-                        <div class="finished_books_div" style="margin-top:10%;">
+                        <div class="books_div" style="margin-top:10%;">
                             <h2 style="text-align:left;">Vos livres enregistrés</h2>
                             <--!entrez php pourcentage ici-->
                             
@@ -170,25 +170,25 @@ include_once('bdd.php');
                             <div class="row" style="margin-top:8%;">
                                 <div class="col-md-4 col-lg-4 col-xl-4 finished" style="background-color:green;height:1000px;text-align:center;">
                                     <h2>Livres lus</h2>
-                                    <div class="container" style="margin-top:25%"> 
-                                        <div class="d-inline" style="float:left;">Total</div>
-                                        <div class="d-inline" style="float:right;">PHP</div>
+                                    <div class="container" style="margin-top:75px"> 
+                                        <div class="d-inline" style="margin-right:100px;">Total</div>
+                                        <div class="d-inline">PHP</div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4 col-lg-4 col-xl-4 reading" style="background-color:purple;text-align:center;">
                                     <h2>Livres en cours de lecture</h2>
-                                    <div class="container" style="margin:15%">
-                                        <div class="d-inline" style="float:left;">Total</div>
-                                        <div class="d-inline" style="float:right;">PHP</div>
+                                    <div class="container" style="margin-top:39px">
+                                        <div class="d-inline" style="margin-right:100px;">Total</div>
+                                        <div class="d-inline">PHP</div>
                                     </div>
                                 </div>
                                     
                                 <div class="col-md-4 col-lg-4 col-xl-4 next_books" style="background-color:orange;text-align:center;">
                                 <h2>Livres à lire</h2>
-                                <div class="container" style="margin-top:30%">
-                                    <div class="d-inline" style="float:left;">Total</div>
-                                    <div class="d-inline" style="float:right;">PHP</div>
+                                <div class="container" style="margin-top:77px">
+                                    <div class="d-inline" style="margin-right:100px;">Total</div>
+                                    <div class="d-inline">PHP</div>
                                 </div>
                                 </div>
                             </div>
