@@ -83,51 +83,16 @@ include_once('bdd.php');
       <!-- le container de la page avec tous les éléments de la page -->
       <div class="container content_box_home"> 
 
-         <hr>
-         <h1>Nos livres séléctionnés rien que pour vous</h1>
-         <hr>
+         <div name="title" style="padding-top:20px;">
+            <hr>
+            <h1>Nos livres séléctionnés rien que pour vous</h1>
+            <hr>
+         </div>
 
          <div class="container" name="selectionS">
             
-            <!--Selection 1 = à la mode ce mois-ci-->
-            <div id="selection" class="carousel slide selection1" data-ride="carousel">
-               <div class="carousel-inner">
-
-                  <!--slide1-->
-                  <div class="carousel-item active" name="slide_1">
-                     <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img1.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img2.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
-                     </div>
-                  </div>
-
-                  <!--slide 2-->
-                  <div class="carousel-item" name="slide_2">
-                     <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img5.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img6.png" alt=""></div>
-                     </div>
-                  </div>
-               </div>
-            
-               <a class="carousel-control-prev" href="#selection" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" href="#selection" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-               </a>
-            </div>
-
-
-
             <!--Selection 2 seulement si utilisateur est connecté = séléction personnelle-->
-            <div id="selection" class="carousel slide" data-ride="carousel">
+            <div id="selection1" class="carousel slide selection1" data-ride="carousel">
                <div class="carousel-inner">
 
                   <!--slide1-->
@@ -151,11 +116,11 @@ include_once('bdd.php');
                   </div>
                </div>
             
-               <a class="carousel-control-prev" href="#selection" role="button" data-slide="prev">
+               <a class="carousel-control-prev" href="#selection1" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                </a>
-               <a class="carousel-control-next" href="#selection" role="button" data-slide="next">
+               <a class="carousel-control-next" href="#selection1" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                </a>
@@ -164,7 +129,7 @@ include_once('bdd.php');
 
 
             <!--Selection 3 = livres récemment ajoutés-->
-            <div id="selection" class="carousel slide" data-ride="carousel">
+            <div id="selection2" class="carousel slide selection" data-ride="carousel">
                <div class="carousel-inner">
 
                   <!--slide1-->
@@ -188,11 +153,11 @@ include_once('bdd.php');
                   </div>
                </div>
             
-               <a class="carousel-control-prev" href="#selection" role="button" data-slide="prev">
+               <a class="carousel-control-prev" href="#selection2" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                </a>
-               <a class="carousel-control-next" href="#selection" role="button" data-slide="next">
+               <a class="carousel-control-next" href="#selection2" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                </a>
@@ -201,7 +166,7 @@ include_once('bdd.php');
 
 
             <!--Selection 4 = livres adorés (les mieux notés)-->
-            <div id="selection" class="carousel slide" data-ride="carousel">
+            <div id="selection3" class="carousel slide selection" data-ride="carousel">
                <div class="carousel-inner">
 
                   <!--slide1-->
@@ -225,11 +190,11 @@ include_once('bdd.php');
                   </div>
                </div>
             
-               <a class="carousel-control-prev" href="#selection" role="button" data-slide="prev">
+               <a class="carousel-control-prev" href="#selection3" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                </a>
-               <a class="carousel-control-next" href="#selection" role="button" data-slide="next">
+               <a class="carousel-control-next" href="#selection3" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                </a>
@@ -240,21 +205,6 @@ include_once('bdd.php');
          </div>
          
 
-
-
-
-         <div class="container-fluid selection selection1" name="fashionable">
-         </div>
-
-         <div class="container-fluid selection" name="for_you">
-         </div>
-
-         <!-- PHP cette sélection n'est visible que si l'utilisateur est connecté" -->
-         <div class="container-fluid selection" name="recently_added">
-         </div>
-
-         <div class="container-fluid selection" name="popular">
-         </div>
 
 
 
