@@ -3,7 +3,8 @@
 
     $query1 = $pdo->prepare('CREATE TABLE IF NOT EXISTS bookclub.root (
         id_root int not null auto_increment,
-        pseudo_root  varchar(255) not null,
+        pseudo_root varchar(255) not null,
+        mdp_root varchar(255) not null,
         mail_root varchar(255) not null,
         PRIMARY KEY (id_root));');
     $query1->execute();

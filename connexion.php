@@ -32,8 +32,11 @@ if (empty(htmlspecialchars($_POST['pseudo'])) OR empty(htmlspecialchars($_POST['
         }
         $query3 = $pdo->prepare('SELECT pseudo_membre, mdp_membre FROM membres WHERE pseudo_membre="' . $_POST['pseudo'] . '" AND mdp_membre="' . $_POST['mdp'] . '" ');
         $query3->execute();
-        $data = $query3->fetch();
-        if ($data) {
+        $data_m = $query3->fetch();
+        $query4 = $pdo->prepare('SELECT pseudo_root, mdp_root FROM root WHERE pseudo_root="' . $_POST['pseudo'] . '" AND mdp_root="' . $_POST['mdp'] . '" ');
+        $query4->execute();
+        $data_r = $query4->fetch();
+        if ($data_m OR $data_r) {
         header('Location: http://localhost:8080/TP/Projet_Web/home.php');
         exit;
 
