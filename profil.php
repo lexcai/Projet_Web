@@ -88,7 +88,7 @@ include_once('bdd.php');
             
                 <div class="row" style="height:100%;">
                     
-                    <div class="col-md-4 col-lg-4 col-xl-4 left_box">
+                    <div class="col-md-3 col-lg-3 col-xl-3 left_box">
 
                         
                         <div class="pic_parent">
@@ -116,10 +116,11 @@ include_once('bdd.php');
                         </div>
                         
                         <!-- multi-lines input pour la BIO -->
+                        <!-- contenu bio de l'utilisateur php -->
                         <div class="bio_box">
-                            <h2 class="titles">Votre bio</h2>
-                            <textarea id="bio_box" name="Bio" onclick="showButton()" rows="4" cols="20">
-                               <!-- contenu bio de l'utilisateur php -->
+                            <h2 class="bio_title">Votre bio</h2>
+                            <textarea id="bio_box" name="Bio" onclick="showButton()" rows="3" cols="17">
+                               
                             </textarea>
                             
                             <!--bouton qui envoie la bio dans la bdd de l'utilisateur
@@ -128,18 +129,71 @@ include_once('bdd.php');
                         </div>                    
                     </div>
 
-                    <div class="col-md-8 col-lg-8 col-xl-8 right_box">
-                            
-                        
-                    <form style="margin-left:75%;width:min-content;display:inline;" action="deconnexion.php" method="post">
-                        <button class="bouton_style deconnexion" type="submit">Deconnexion</button>
-                    </form>
-
-                    <button class="bouton_style edit_profil" name="edit_profil" style="display:inline;" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/modification_membre.php';">Compte</button>
                     
-                                
 
+                    <div class="col-md-9 col-lg-9 col-xl-9 right_box">
                             
+                        <div class="container" style="padding-bottom:50px;padding-top:2px;">
+                            <form style="float:right;width:min-content;display:inline;" action="deconnexion.php" method="post">
+                                <button class="bouton_style deconnexion" type="submit">Deconnexion</button>
+                            </form>
+
+                            <button class="bouton_style edit_profil" name="edit_profil" style="float:right;" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/modification_membre.php';">Compte</button>
+                        </div>
+
+                        
+                        <h1>Statistiques de votre bibliothèque</h1>
+                        
+                            
+                        <div class="finished_books_div" style="margin-top:10%;">
+                            <h2 style="text-align:left;">Vos livres enregistrés</h2>
+                            <--!entrez php pourcentage ici-->
+                            
+                            <div class="progress" style="margin-left:15px;margin-right:15px;height:30px">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="font-size:small;width:40%;background-color:green">
+                                    livres lus
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="font-size:small;width:10%;background-color:purple;">
+                                    en lecture
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="font-size:small;width:20%;background-color:orange;">
+                                    livres à lire
+                                </div>
+                            </div> 
+
+                            <--!nombre de livres total en php-->
+                            <div class="container">
+                                <div class="d-inline">Total livres enregistrés:</div>
+                                <div class="d-inline" style="float:right;">PHP number</div>
+                            </div>
+                           
+                            <div class="row" style="margin-top:8%;">
+                                <div class="col-md-4 col-lg-4 col-xl-4 finished" style="background-color:green;height:1000px;text-align:center;">
+                                    <h2>Livres lus</h2>
+                                    <div class="container" style="margin-top:25%"> 
+                                        <div class="d-inline" style="float:left;">Total</div>
+                                        <div class="d-inline" style="float:right;">PHP</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-lg-4 col-xl-4 reading" style="background-color:purple;text-align:center;">
+                                    <h2>Livres en cours de lecture</h2>
+                                    <div class="container" style="margin:15%">
+                                        <div class="d-inline" style="float:left;">Total</div>
+                                        <div class="d-inline" style="float:right;">PHP</div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="col-md-4 col-lg-4 col-xl-4 next_books" style="background-color:orange;text-align:center;">
+                                <h2>Livres à lire</h2>
+                                <div class="container" style="margin-top:30%">
+                                    <div class="d-inline" style="float:left;">Total</div>
+                                    <div class="d-inline" style="float:right;">PHP</div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                     
