@@ -30,14 +30,17 @@ if (empty(htmlspecialchars($_POST['pseudo'])) OR empty(htmlspecialchars($_POST['
                 $_SESSION['IS_CONNECTED'] = true;
                 }
         }
-        $query3 = $pdo->prepare('SELECT pseudo_membre FROM membres WHERE pseudo_membre="' . $_POST['pseudo'] . '"');
-        $data = $query3->fecth();
-        if (($_POST['pseudo'] != $data['pseudo_membre'])) {
-        header('Location: http://localhost:8080/TP/Projet_Web/connexion.html');
-        exit;
-        }
+        $query3 = $pdo->prepare('SELECT pseudo_membre, mdp_membre FROM membres WHERE pseudo_membre="' . $_POST['pseudo'] . '" AND mdp_membre="' . $_POST['mdp'] . '" ');
+        $query3->execute();
+        $data = $query3->fetch();
+        if ($data) {
         header('Location: http://localhost:8080/TP/Projet_Web/home.php');
         exit;
+
+        } else {
+                header('Location: http://localhost:8080/TP/Projet_Web/connexion.html');
+        exit;
+        }
     }
  ?>
 
