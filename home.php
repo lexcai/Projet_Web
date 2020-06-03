@@ -79,7 +79,22 @@ include_once('bdd.php');
            <br>Et partagez votre avis.</p>  
          </div>
       </div>
+      <?php /*Liens de moderation[en cours]
+               Probleme :
+               mise en page
+               suppresion d'une colonne dans la bdd
+               */ ?>
+         <?php if (isset($_SESSION['IS_CONNECTED'])) {
+               if ($_SESSION['table']  == 'root') {
+                     
+         ?>
+         <a href="./moderation_livres.php">Moderation livres</a>
+         <a href="./moderation_membres.php">Moderation membres</a>
+         
 
+         <?php }
+               }
+      ?>
       <!-- le container de la page avec tous les éléments de la page -->
       <div class="container content_box_home"> 
 
