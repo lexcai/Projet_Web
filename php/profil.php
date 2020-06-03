@@ -26,8 +26,8 @@ include_once('bdd.php');
         <title>Accueil</title>
 
         <!-- css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
                     
    </head>
    
