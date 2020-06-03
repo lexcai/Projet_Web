@@ -86,7 +86,7 @@ include_once('bdd.php');
                         }
                 </script>
             
-                <div class="row">
+                <div class="row" style="height:100%;">
                     
                     <div class="col-md-3 col-lg-3 col-xl-3 left_box">
 
@@ -118,7 +118,7 @@ include_once('bdd.php');
                         <!-- multi-lines input pour la BIO -->
                         <!-- contenu bio de l'utilisateur php -->
                         <div class="bio_box">
-                            <h3 class="bio_title" style="text-align:center;">Votre bio</h3>
+                            <h2 class="bio_title">Votre bio</h2>
                             <textarea id="bio_box" name="Bio" onclick="showButton()" rows="3" cols="17">
                                
                             </textarea>
@@ -167,113 +167,98 @@ include_once('bdd.php');
                                 <div class="d-inline" style="float:right;">PHP number</div>
                             </div>
                            
-
                             <div class="row" style="margin-top:10%;">
-                                <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                    <h3>Livres lus</h3>
+                                <div class="col-md-4 col-lg-4 col-xl-4 finished" style="background-color:green;height:1000px;text-align:center;">
+                                    <h2>Livres lus</h2>
                                     <div class="container" style="margin-top:75px"> 
                                         <div class="d-inline" style="margin-right:60px;">Total</div>
                                         <div class="d-inline">PHP</div>
                                     </div>
 
-                                    <h4 style="font-size:20px;margin-top:50px;">Derniers ajouts</h4>
+                                    <h4 style="margin-top:50px;">Derniers ajouts</h4>
 
-                                    <div class="row" name="line_1" style="margin-top:10%;height:200px;">
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
+                                    <div class="row" name="line_1" style="margin-top:10%;height:150px;">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" style="background-color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
 
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" class="show_book">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" style="background-color:black;color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
                                     </div>
 
-                                    <div class="row" name="line_2" style="margin-top:10%;height:200px;">
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
+                                    <div class="row" name="line_2" style="margin-top:10%;height:150px;">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" style="background-color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100        
                                         </div>
 
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" class="show_book">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" style="background-color:black;color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
                                     </div>
-
-                                    <div class="container more_box">
-                                        <a href="finished.html" class="more">Voir plus...</a>
-                                    </div>
-
                                 </div>
 
-                                <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                    <h3>Livres en cours de lecture</h3>
-                                    <div class="container" style="margin-top:36px">
+                                <div class="col-md-4 col-lg-4 col-xl-4 reading" style="background-color:purple;text-align:center;">
+                                    <h2>Livres en cours de lecture</h2>
+                                    <div class="container" style="margin-top:39px">
                                         <div class="d-inline" style="margin-right:60px;">Total</div>
                                         <div class="d-inline">PHP</div>
                                     </div>
 
-                                    <h4 style="font-size:20px;margin-top:50px;">Derniers ajouts</h4>
+                                    <h4 style="margin-top:50px;">Derniers ajouts</h4>
 
-                                    <div class="row" name="line_1" style="margin-top:10%;height:200px;">
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
+                                    <div class="row" name="line_1" style="margin-top:10%;height:150px;">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" style="background-color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
 
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" class="show_book">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" style="background-color:black;color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
                                     </div>
 
-                                    <div class="row" name="line_2" style="margin-top:10%;height:200px;">
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
+                                    <div class="row" name="line_2" style="margin-top:10%;height:150px;">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" style="background-color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100        
                                         </div>
 
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" class="show_book">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" style="background-color:black;color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
                                     </div>
-
-                                    <div class="container more_box">
-                                        <a href="reading.html" class="more">Voir plus...</a>
-                                    </div>
-
                                 </div>
                                     
-                                <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                    <h3>Livres à lire</h3>
-                                    <div class="container" style="margin-top:75px">
+                                <div class="col-md-4 col-lg-4 col-xl-4 next_books" style="background-color:orange;text-align:center;">
+                                    <h2>Livres à lire</h2>
+                                    <div class="container" style="margin-top:77px">
                                         <div class="d-inline" style="margin-right:60px;">Total</div>
                                         <div class="d-inline">PHP</div>
                                     </div>
 
-                                    <h4 style="font-size:20px;margin-top:50px;">Derniers ajouts</h4>
+                                    <h4 style="margin-top:50px;">Derniers ajouts</h4>
 
-                                    <div class="row" name="line_1" style="margin-top:10%;height:200px;">
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
+                                    <div class="row" name="line_1" style="margin-top:10%;height:150px;">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" style="background-color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
 
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" class="show_book">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" style="background-color:black;color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
                                     </div>
 
-                                    <div class="row" name="line_2" style="margin-top:10%;height:200px;">
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
+                                    <div class="row" name="line_2" style="margin-top:10%;height:150px;">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" style="background-color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100        
                                         </div>
 
-                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" class="show_book">
+                                        <div class="col-md-6 col-lg-6 col-xl-6" name="pic_right" style="background-color:black;color:white;padding:25px;">
                                             livre avec photo titre auteur en 100*100
                                         </div>
                                     </div>
-
-                                    <div class="container more_box">
-                                        <a href="next_books.html" class="more">Voir plus...</a>
-                                    </div>
-
                                 </div>
-                           </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

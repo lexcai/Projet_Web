@@ -119,7 +119,6 @@ body, html {
 
 .content_box_home{
   margin-top: 10%;
-  height: 1500px;
   width: 80%;
   background-color: rgb(248, 255, 209);
   border: solid 4px rgb(237, 245, 177);
@@ -144,12 +143,19 @@ hr{
 h1{
   margin: 3%;
   letter-spacing: 3px;
+  font-size: 35px;
+  color: rgb(3, 54, 4);
+  text-align: center;
+}
+h2{
+  margin: 3%;
+  letter-spacing: 3px;
   font-size: 30px;
   color: rgb(3, 54, 4);
   text-align: center;
 }
 
-#selection{
+.selection{
   height: 200px;
   margin-top: 300px;
   margin-bottom: 300px;
@@ -274,4 +280,25 @@ h1{
 
 /*boite de droite*/
 
+.book_statut{
+  text-align:center;
+  border-right: solid 1px gray;
+}
 
+.show_pic{
+  padding:25px;
+}
+
+.more_box{
+  margin-bottom: 25px;
+  margin-top:15px;
+}
+.more{
+  text-decoration: none;
+  margin-left: 60%;
+  color: rgb(4, 54, 4);
+}
+.more:hover{
+  text-decoration: none;
+  color: black;
+}
