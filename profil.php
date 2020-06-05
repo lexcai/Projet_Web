@@ -68,7 +68,7 @@ include_once('bdd.php');
 
 
 
-            <div class="container content"> 
+            <div class="container content" style="background-color:transparent;border:none;"> 
             <!-- contenu de la page dans la div content divisée en grilles avec Bootstrap -->
 
                 <script>
@@ -89,7 +89,7 @@ include_once('bdd.php');
                 <div class="row">
                     
                         <div class="col-md-3 col-lg-3 col-xl-3">
-                            <div class="col-md-12" style="background-color:coral;"> 
+                            <div class="col-md-12" style="background-color:coral;padding-top:30px;padding-bottom:30px;"> 
                                 <div class="pic_parent" style="margin-top:2px;">
                                     <img class='profil_pic' src="<?php echo $membres['photo']; ?>"/>
                                     <button class='profil_pic edit_pic_button' onclick="showDiv()"></button>                                                      
@@ -97,10 +97,10 @@ include_once('bdd.php');
 
                                 <div id="new_pic" class="container" style="display:none;"> 
                                     <form action="ajout_photo.php" method="post" enctype="multipart/form-data">
-                                        <label for "avatar"> Choisissez une photo de profil :</label>
+                                        <label for "avatar" style="text-align:center;"> Choisissez une photo de profil :</label>
                                         <input type="file" name="file" id="file" style="color:rgb(3, 54, 4);padding:10px;" accept="image/png, image/jpeg">
-                                        <button class="bouton_style" style="margin-right:52%;" type="submit">Envoyer</button>
-                                        <button class="bouton_style" onclick="hideDiv()">Annuler</button>
+                                        <button class="bouton_style" style="margin-right:25%;border:none;" type="submit">Envoyer</button>
+                                        <button class="bouton_style" style="border:none;" onclick="hideDiv()">Annuler</button>
                                     </form>     
                                 </div>  
                                 
@@ -118,7 +118,7 @@ include_once('bdd.php');
                                 <!-- contenu bio de l'utilisateur php -->
                                 <div class="bio_box">
                                     <h3 class="bio_title" style="text-align:center;">Votre bio</h3>
-                                    <textarea id="bio_box" name="Bio" onclick="showButton()" rows="3" cols="17">
+                                    <textarea id="bio_box" name="Bio" style="margin-left:1%;" onclick="showButton()" rows="3" cols="17">
                                     
                                     </textarea>
                                     
@@ -131,7 +131,7 @@ include_once('bdd.php');
 
 
                         <div class="col-md-9 col-lg-9 col-xl-9">
-                            <div class="col-md-12" style="background-color:coral;"> 
+                            <div class="col-md-12" style="background-color:coral;padding:30px;"> 
                                 <div class="container" style="padding-top:2px;">
                                     <form style="float:right;width:min-content;display:inline;" action="deconnexion.php" method="post">
                                         <button class="bouton_style deconnexion" type="submit">Deconnexion</button>
@@ -141,7 +141,7 @@ include_once('bdd.php');
                                 </div>
 
                                 
-                                <h1>Statistiques de votre bibliothèque</h1>
+                                <h1 style="padding:50px;padding-bottom:0;">Statistiques de votre bibliothèque</h1>
                                 
                                     
                                 <div class="books_div" style="margin-top:10%;">
@@ -173,7 +173,7 @@ include_once('bdd.php');
 
                                     <div class="row" style="margin-top:10%;">
                                         <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                            <h3>Livres lus</h3>
+                                            <h3 class="statut_title">Livres lus</h3>
                                             <div class="container" style="margin-top:75px"> 
                                                 <div class="d-inline" style="margin-right:60px;">Total</div>
                                                 <div class="d-inline">PHP</div>
@@ -191,7 +191,7 @@ include_once('bdd.php');
                                                 </div>
                                             </div>
 
-                                            <div class="row" name="line_2" style="margin-top:10%;height:200px;">
+                                            <div class="row" name="line_2" style="height:200px;">
                                                 <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
                                                     livre avec photo titre auteur en 100*100        
                                                 </div>
@@ -208,8 +208,8 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                            <h3>Livres en cours de lecture</h3>
-                                            <div class="container" style="margin-top:36px">
+                                            <h3 class="statut_title">Livres en cours de lecture</h3>
+                                            <div class="container" style="margin-top:48px;">
                                                 <div class="d-inline" style="margin-right:60px;">Total</div>
                                                 <div class="d-inline">PHP</div>
                                             </div>
@@ -226,7 +226,7 @@ include_once('bdd.php');
                                                 </div>
                                             </div>
 
-                                            <div class="row" name="line_2" style="margin-top:10%;height:200px;">
+                                            <div class="row" name="line_2" style="height:200px;">
                                                 <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
                                                     livre avec photo titre auteur en 100*100        
                                                 </div>
@@ -243,7 +243,7 @@ include_once('bdd.php');
                                         </div>
                                             
                                         <div class="col-md-4 col-lg-4 col-xl-4" style="text-align:center;">
-                                            <h3>Livres à lire</h3>
+                                            <h3 class="statut_title">Livres à lire</h3>
                                             <div class="container" style="margin-top:75px">
                                                 <div class="d-inline" style="margin-right:60px;">Total</div>
                                                 <div class="d-inline">PHP</div>
@@ -261,7 +261,7 @@ include_once('bdd.php');
                                                 </div>
                                             </div>
 
-                                            <div class="row" name="line_2" style="margin-top:10%;height:200px;">
+                                            <div class="row" name="line_2" style="height:200px;">
                                                 <div class="col-md-6 col-lg-6 col-xl-6" name="pic_left" class="show_book">
                                                     livre avec photo titre auteur en 100*100        
                                                 </div>

@@ -6,6 +6,8 @@ body, html {
 
 .bouton_style{
   color: rgb(71, 75, 48);
+  border-radius: 10%;
+  border: none;
   background-color: rgb(247, 255, 188);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -90,7 +92,6 @@ body, html {
   color: black;
 }
 
-
 /*-----------------------------------------------*/
 /*message de bienvenue*/
 .message_box{
@@ -127,9 +128,9 @@ body, html {
 .content{
   margin-top: 10%;
   height: 1500px;
-  width: 80%;
-  background-color: rgb(248, 255, 209);
-  border: solid 4px rgb(237, 245, 177);
+  width: 82%;
+  background-color:transparent;
+  border:none;
 }
 
 hr{
@@ -150,7 +151,14 @@ h1{
 h2{
   margin: 3%;
   letter-spacing: 3px;
-  font-size: 30px;
+  font-size: 26px;
+  color: rgb(3, 54, 4);
+  text-align: center;
+}
+.statut_title{
+  margin: 3%;
+  letter-spacing: 3px;
+  font-size: 23px;
   color: rgb(3, 54, 4);
   text-align: center;
 }
@@ -178,15 +186,18 @@ h2{
   font-size: medium;
 }
 
+input#file{
+  width: 75%;
+}
+
 
 
 
 /*boite de gauche*/
 
 .edit_profil, .deconnexion{
-  border: solid 1px gray;
-  border-radius: 10%;
   margin-top: 2px;
+  margin-right: 3px;
 }
 .deconnexion:hover, .edit_profil:hover{
   color: black;
@@ -208,8 +219,10 @@ h2{
   border: none;
   object-fit: cover;
 }
+
+/*à gérer*/
 .profil_pic:hover{
-  opacity: 30%;
+  opacity: 10%;
 }
 .edit_pic_button{
   background-color: transparent;
@@ -223,9 +236,9 @@ h2{
 }
 
 #new_pic{
-  background-color: aliceblue;
-  margin-top: 3%;
-  border: solid 1px gray;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -258,7 +271,7 @@ h2{
 
 .bio_box{
   color: rgb(3, 54, 4);
-  margin: 10%;
+  margin: 2%;
 }
 #bio_space{
   border: solid 1px gray;
@@ -296,3 +309,28 @@ h2{
   text-decoration: none;
   color: black;
 }
+
+
+/*-----------------------------------------------*/
+/*page communauté*/
+
+.find_reader {
+  display: block;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.reader_pseudo{
+  margin-bottom: 5%;
+  border: none;
+  padding-bottom: 3px;
+  color: rgb(78, 83, 49);
+  border-bottom: solid rgb(71, 75, 48);
+  border-bottom-width: 1px;
+}
+.form_reader{
+  margin-top: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+

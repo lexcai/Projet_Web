@@ -20,16 +20,16 @@
                 <!-- liens, celui de la page actuelle est désactivé -->
                 <ul class="navbar-nav links_position">
                     <li class="nav-item">
-                        <a class="nav-link link_enable " href="home.html">Page d'accueil</a>
+                        <a class="nav-link link_enable " href="home.php">Page d'accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link_enable" href="#">A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="#">Communauté</a>
+                        <a class="nav-link disabled link_disable" href="#">Communauté</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled link_disable" href="profil.html">Profil</a>
+                        <a class="nav-link link_enable" href="profil.php">Profil</a>
                     </li>  
                 </ul>
 
@@ -40,14 +40,14 @@
                     </div>
                 </div>
 
-                <button class="valider_bouton" type="submit">Rechercher</button>
+                <button class=" bouton_style valider_bouton" type="submit">Rechercher</button>
             </nav>
 
             <div class="container content"> 
                 <!-- php ici, 
-                affichage des 9 derniers utilisateurs connectés; image, pseudo last connexion
-                (si il y a 9 utilisateurs connectés alors affiche les en indiquant last connected : less than 1 sec.)
-
+                affichage des 9 utilisateurs randomly; image, pseudo 
+                
+                à droite:
                 barre de Recherche d'utilisateurs
                 recherche simple par pseudo
                 bouton rechercher envoie requete vers BDD juste pseudo.
@@ -61,9 +61,37 @@
                 ajouter en ami (envoi requete à l'utilisateur, envoi mail?)
                 lien depuis image ou pseudo vers page de l'utilisateur 
                 = profil_ext.html (pareil que profil.html + extras; bouton ajout en ami, bouton envoyer un message privé)-->
+
+
+
+                <div class="row">
+                    <div class="col-md-8 col-lg-8 col-xl-8">
+                        <div class="col-md-12" style="background-color:coral;padding:30px;"> 
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-xl-4">
+                        <div class="col-md-12" style="background-color:coral;padding:30px"> 
+
+                            <h3 class="statut_title">Trouvez un lecteur</h3>
+
+                            <form class="form_reader" action="###" method="post">
+                                <label class="find_reader">
+                                    <input type="text" class="reader_pseudo" name="pseudo" placeholder="pseudo" required />
+                                </label>
+
+                                <button class="bouton_style" style="margin-left:30%;" type="submit">Rechercher</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    
+                </div>
             </div>
+            
         </div>
 
+        
         
    </body>
 </html>
