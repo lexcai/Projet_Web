@@ -39,7 +39,7 @@
             </label>
 
             <label for="sexe" class="input_inscription">
-               <input class='sexe_style' name="sex" type="radio" value="H"> Homme <input class='sexe_style' type="radio" name="sex" value="F"> Femme
+               <input name="sex" type="radio" value="H"> Homme <input type="radio" name="sex" value="F"> Femme
             </label>
 
             <label for="age" class="input_inscription">

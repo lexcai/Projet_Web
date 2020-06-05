@@ -91,11 +91,18 @@
                             </form>
 
                             <button class="advanced_search_button" onclick="show_advanced_search()">
-                                <h4 class="advanced_search_link">Recherche avancée</h4>
+                                <h4 class="advanced_search_style">Recherche avancée</h4>
                             </button>
 
-                            <div class="container" id="advanced_search" style="display:none;background-color:pink;width:100px;height:100px;margin:10%;">
-                            
+                            <div class="container-fluid" id="advanced_search" style="display:none;background-color:pink;margin-top:45px; padding:5px;">
+                                
+                                <div class="col-md-12">
+                                    <h4 style="text-align:left;">Genre</h4>
+                                    <label for="sexe" class="advanced_search_input">
+                                        <input name="sex" type="radio" value="H" style="inline-block"><p style="color:rgb(46, 44, 7);">Homme</p><input type="radio" name="sex" value="F" style="inline-block"><p style="color:rgb(46, 44, 7);">Femme</p>
+                                    </label>
+                                </div>
+
                             
                             </div>
                         </div>

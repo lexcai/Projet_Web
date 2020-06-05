@@ -348,8 +348,12 @@ input#file{
   margin: 10px;
   float: right;
 }
-.advanced_search_link:hover{
+.advanced_search_style:hover{
   color:black;
 }
 
 
+.advanced_search_input{
+  text-align: center;
+  font-size: small;
+}
