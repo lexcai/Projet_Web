@@ -33,7 +33,6 @@ include_once('bdd.php');
    
    <body>
 
-   
         <div class='body_box'>
             <!-- la barre de navigation responsive avec Bootstrap -->
             <nav class="navbar fixed_top navbar-expand-sm nav_bar_style">
@@ -68,7 +67,7 @@ include_once('bdd.php');
 
 
 
-            <div class="container content" style="background-color:transparent;border:none;"> 
+            <div class="container content"> 
             <!-- contenu de la page dans la div content divisée en grilles avec Bootstrap -->
 
                 <script>

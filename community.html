@@ -62,7 +62,14 @@
                 lien depuis image ou pseudo vers page de l'utilisateur 
                 = profil_ext.html (pareil que profil.html + extras; bouton ajout en ami, bouton envoyer un message privé)-->
 
-
+                <script>
+                        function show_advanced_search() {
+                            document.getElementById('advanced_search').style.display = "block";
+                        }
+                        function hide_advanced_search() {
+                            document.getElementById('advanced_search').style.display = "none";
+                        }
+                </script>
 
                 <div class="row">
                     <div class="col-md-8 col-lg-8 col-xl-8">
@@ -80,8 +87,17 @@
                                     <input type="text" class="reader_pseudo" name="pseudo" placeholder="pseudo" required />
                                 </label>
 
-                                <button class="bouton_style" style="margin-left:30%;" type="submit">Rechercher</button>
+                                <button class="bouton_style" style="margin-left:8%;display:inline-block;" type="submit">Rechercher</button>
                             </form>
+
+                            <button class="advanced_search_button" onclick="show_advanced_search()">
+                                <h4 class="advanced_search_link">Recherche avancée</h4>
+                            </button>
+
+                            <div class="container" id="advanced_search" style="display:none;background-color:pink;width:100px;height:100px;margin:10%;">
+                            
+                            
+                            </div>
                         </div>
                     </div>
 
