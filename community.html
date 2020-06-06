@@ -84,34 +84,48 @@
 
                             <form class="form_reader" action="###" method="post">
                                 <label class="find_reader">
-                                    <input type="text" class="reader_pseudo" name="pseudo" placeholder="pseudo" required />
+                                    <input type="text" class="reader_pseudo" name="pseudo" placeholder="Nom utilisateur" required />
                                 </label>
 
                                 <button class="bouton_style" style="margin-left:8%;display:inline-block;" type="submit">Rechercher</button>
                             </form>
 
                             <button class="advanced_search_button" onclick="show_advanced_search()">
-                                <h4 class="advanced_search_style">Recherche avancée</h4>
+                                <h4 style="font-style:italic;cursor:pointer;" class="advanced_search_style">Recherche avancée</h4>
                             </button>
 
                             <div class="container-fluid" id="advanced_search" style="display:none;background-color:pink;margin-top:50px;padding:5px;">
                                 
                                 <div class="col-md-12">
-                                    <h3 style="text-align:left;">Genre</h3>
+                                    <h3 style="text-align:left;">> Genre</h3>
                                     <label for="sexe" class="input_text" style="display:inline-block;width:100%;">
-                                        <input name="sex" type="radio" style="margin :3%" value="H">Homme
-                                        <input type="radio" name="sex" style="margin :3%" value="F">Femme
+                                        <input name="sex" type="radio" style="margin:3%;cursor:pointer;" value="H">Homme
+                                        <input type="radio" name="sex" style="margin:3%;cursor:pointer;" value="F">Femme
                                     </label>
 
-                                    <h3 style="text-align:right;margin-top:25px;">Tranche d'age</h3>
+                                    <h3 style="text-align:right;margin-top:25px;">Tranche d'age <</h3>
                                     <label for="age_select" style="margin-left:17%;"></label>
 
-                                        <select name="ages"  class="input_text" style="margin:3%;border:solid 1px rgb(67, 78, 16);background-color:transparent;">
-                                            <option value="">Choisir</option>
+                                        <select name="ages"  class="input_text" style="width:70%;margin:3%;border:solid 1px rgb(67, 78, 16);background-color:transparent;">
+                                            <option value="">- Choisir -</option>
                                             <option value="kids">10 à 20 ans</option>
                                             <option value="youngs">20 à 30 ans</option>
                                             <option value="adults">30 à 40 ans</option>
-                                            <option value="olds">40 ans et plus...</option>
+                                            <option value="seniors">40 ans et plus...</option>
+                                        </select>
+                                    </label> 
+
+                                    <h3 style="text-align:left;margin-top:25px;">> Pays</h3>
+                                    <label for="age_select" style="margin-left:17%;"></label>
+
+                                        <select name="pays"  class="input_text" style="width:70%;margin:3%;border:solid 1px rgb(67, 78, 16);background-color:transparent;">
+                                            <option value="">- Choisir -</option>
+                                            <option value="fr">France</option>
+                                            <option value="en">Angleterre</option>
+                                            <option value="es">Espagne</option>
+                                            <option value="it">Italie</option>
+                                            <option value="us">USA</option>
+                                            <option value="jp">Japon</option>
                                         </select>
                                     </label> 
 

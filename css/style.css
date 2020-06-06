@@ -362,3 +362,7 @@ input#file{
   letter-spacing: 2px;
   text-align: center;  
 }
+
+select{
+  -webkit-appearance: ;
+}
