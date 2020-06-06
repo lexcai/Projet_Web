@@ -155,9 +155,13 @@ h2{
   color: rgb(3, 54, 4);
   text-align: center;
 }
+h3{
+  font-size: large;  
+  color:rgb(69, 65, 6);
+}
 h4{
   font-size:16px;
-  color:rgb(69, 65, 6);
+  color: rgb(36, 35, 10);
 }
 
 .statut_title{
@@ -352,8 +356,9 @@ input#file{
   color:black;
 }
 
-
-.advanced_search_input{
-  text-align: center;
-  font-size: small;
+.input_text{
+  color: rgb(36, 35, 10);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;  
 }

@@ -80,7 +80,7 @@
                     <div class="col-md-4 col-lg-4 col-xl-4">
                         <div class="col-md-12" style="background-color:coral;padding:30px"> 
 
-                            <h3 class="statut_title">Trouvez un lecteur</h3>
+                            <h2 class="statut_title">Trouvez un lecteur</h2>
 
                             <form class="form_reader" action="###" method="post">
                                 <label class="find_reader">
@@ -94,13 +94,27 @@
                                 <h4 class="advanced_search_style">Recherche avancée</h4>
                             </button>
 
-                            <div class="container-fluid" id="advanced_search" style="display:none;background-color:pink;margin-top:45px; padding:5px;">
+                            <div class="container-fluid" id="advanced_search" style="display:none;background-color:pink;margin-top:50px;padding:5px;">
                                 
                                 <div class="col-md-12">
-                                    <h4 style="text-align:left;">Genre</h4>
-                                    <label for="sexe" class="advanced_search_input">
-                                        <input name="sex" type="radio" value="H" style="inline-block"><p style="color:rgb(46, 44, 7);">Homme</p><input type="radio" name="sex" value="F" style="inline-block"><p style="color:rgb(46, 44, 7);">Femme</p>
+                                    <h3 style="text-align:left;">Genre</h3>
+                                    <label for="sexe" class="input_text" style="display:inline-block;width:100%;">
+                                        <input name="sex" type="radio" style="margin :3%" value="H">Homme
+                                        <input type="radio" name="sex" style="margin :3%" value="F">Femme
                                     </label>
+
+                                    <h3 style="text-align:right;margin-top:25px;">Tranche d'age</h3>
+                                    <label for="age_select" style="margin-left:17%;"></label>
+
+                                        <select name="ages"  class="input_text" style="margin:3%;border:solid 1px rgb(67, 78, 16);background-color:transparent;">
+                                            <option value="">Choisir</option>
+                                            <option value="kids">10 à 20 ans</option>
+                                            <option value="youngs">20 à 30 ans</option>
+                                            <option value="adults">30 à 40 ans</option>
+                                            <option value="olds">40 ans et plus...</option>
+                                        </select>
+                                    </label> 
+
                                 </div>
 
                             
