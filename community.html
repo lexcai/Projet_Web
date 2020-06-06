@@ -153,7 +153,7 @@
 
                     <!-- bloc de droite-->
                     <div class="col-md-4 col-lg-4 col-xl-4">
-                        <div class="col-md-12" style="background-color:coral;padding:30px"> 
+                        <div class="col-md-12" style="background-color:coral;padding:30px;padding-bottom:40px;height:auto;"> 
 
                             <h2 class="statut_title">Trouvez un lecteur</h2>
 
@@ -162,26 +162,26 @@
                                     <input type="text" class="reader_pseudo" name="pseudo" placeholder="Nom utilisateur" required />
                                 </label>
 
-                                <button class="bouton_style" style="margin-left:8%;display:inline-block;" type="submit">Rechercher</button>
+                                <button class="bouton_style" style="margin-left:8%;display:inline-block;outline:0;cursor:pointer;" type="submit">Rechercher</button>
                             </form>
 
-                            <button class="advanced_search_button" onclick="show_advanced_search()">
-                                <h4 style="font-style:italic;cursor:pointer;" class="advanced_search_style">Recherche avancée</h4>
+                            <button class="advanced_search_button" style="cursor:pointer;outline:0;" onclick="show_advanced_search()">
+                                <h4 style="font-style:italic;" class="advanced_search_style">Recherche avancée</h4>
                             </button>
 
                             <div class="container-fluid" id="advanced_search" style="display:none;background-color:pink;margin-top:50px;padding:5px;">
                                 
                                 <div class="col-md-12">
-                                    <h3 style="text-align:left;">> Genre</h3>
-                                    <label for="sexe" class="input_text" style="display:inline-block;width:100%;">
-                                        <input name="sex" type="radio" style="margin:3%;cursor:pointer;" value="H">Homme
-                                        <input type="radio" name="sex" style="margin:3%;cursor:pointer;" value="F">Femme
+                                    <h3 style="text-align:left;">>> Genre</h3>
+                                    <label for="sexe" class="input_text" style="display:inline-block;width:100%;border:none;">
+                                        <input name="sex" type="radio" style="margin:3%;outline:0;cursor:pointer;" value="H">Homme
+                                        <input type="radio" name="sex" style="margin:3%;outline:0;cursor:pointer;" value="F">Femme
                                     </label>
 
-                                    <h3 style="text-align:right;margin-top:25px;">Tranche d'age <</h3>
-                                    <label for="age_select" style="margin-left:10%;"></label>
+                                    <h3 style="text-align:right;margin-top:25px;">Tranche d'age <<</h3>
+                                    <label for="age_select" style="margin-left:10%;" class="input_label"></label>
 
-                                        <select name="ages"  class="input_text" style="width:70%;margin:3%;border:solid 1px rgb(67, 78, 16);background-color:transparent;">
+                                        <select name="ages"  class="input_text">
                                             <option value="">- Choisir -</option>
                                             <option value="kids">10 à 20 ans</option>
                                             <option value="youngs">20 à 30 ans</option>
@@ -190,10 +190,10 @@
                                         </select>
                                     </label> 
 
-                                    <h3 style="text-align:left;margin-top:25px;">> Pays</h3>
-                                    <label for="age_select" style="margin-left:10%;"></label>
+                                    <h3 style="text-align:left;margin-top:25px;">>> Pays</h3>
+                                    <label for="age_select" style="margin-left:10%;" class="input_label"></label>
 
-                                        <select name="pays"  class="input_text" style="width:70%;margin:3%;border:solid 1px rgb(67, 78, 16);background-color:transparent;">
+                                        <select name="pays"  class="input_text">
                                             <option value="">- Choisir -</option>
                                             <option value="fr">France</option>
                                             <option value="en">Angleterre</option>
@@ -204,7 +204,7 @@
                                         </select>
                                     </label> 
 
-                                    <button class="bouton_style" style="margin-top:5%;margin-left:65%" type="submit">Rechercher</button>
+                                    <button class="bouton_style" style="margin-top:5%;margin-left:65%;cursor:pointer;outline:0;" type="submit">Rechercher</button>
 
                                 </div>                            
                             </div>

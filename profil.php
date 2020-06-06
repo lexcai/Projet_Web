@@ -277,8 +277,7 @@ include_once('bdd.php');
                                 </div>
                             </div>
                         </div>
-                    </div>
-                                        
+                    </div>                                        
                 </div>
             </div>
         </div>        

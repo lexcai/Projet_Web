@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
 body, html {
   height: 100%;
   margin: 0;
@@ -127,7 +130,7 @@ body, html {
 
 .content{
   margin-top: 10%;
-  height: 1500px;
+  height: auto;
   width: 80%;
   background-color:transparent;
   border:none;
@@ -210,6 +213,8 @@ input#file{
 }
 .deconnexion:hover, .edit_profil:hover{
   color: black;
+  cursor:pointer;
+  outline:0;
 }
 .pic_parent{
   position: relative;
@@ -251,7 +256,6 @@ input#file{
   padding: 10px;
 }
 
-
 .pseudo{
   display: inline-block;
   width: auto;
@@ -288,6 +292,8 @@ input#file{
 #save_bio{
   border: solid 1px gray;
   border-radius: 10%;
+  cursor:pointer;
+  outline:0
 }
 .save_bio:hover{
   color: black;
@@ -357,19 +363,31 @@ input#file{
 }
 
 .input_text{
-  color: rgb(36, 35, 10);
+  color: rgb(65, 63, 16);
   font-size: 14px;
   letter-spacing: 2px;
   text-align: center;  
+  width:70%;
+  margin:3%;
+  border:solid 1px rgb(67, 78, 16);
+  background-color:transparent;
+  outline: 0;
+  cursor: pointer;
+}
+.input_text:hover{
+  border: solid 1px rgb(0, 0, 0);
 }
 
-select{
+
+.input_label, select{
   -webkit-appearance: none;
-  background-color: transparent;
+  -moz-appearance:none;
+  appearance: none;
 }
 
-.parent_users_pic{
 
+/* left bloc */
+.parent_users_pic{
   position: relative;
   width: 100px;
   height: 100px;
