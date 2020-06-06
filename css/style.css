@@ -364,5 +364,6 @@ input#file{
 }
 
 select{
-  -webkit-appearance: ;
+  -webkit-appearance: none;
+  background-color: transparent;
 }
