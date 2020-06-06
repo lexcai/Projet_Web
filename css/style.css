@@ -367,3 +367,22 @@ select{
   -webkit-appearance: none;
   background-color: transparent;
 }
+
+.parent_users_pic{
+
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+  border: solid 1px black;
+
+}
+.users_pic{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  object-fit: cover;
+}
