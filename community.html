@@ -24,11 +24,13 @@
                         <a class="nav-link link_enable " href="home.php">Page d'accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="#">A propos</a>
+                        <a class="nav-link link_enable" href="about_us.html">A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled link_disable" href="#">Communauté</a>
+                        <a class="nav-link disabled link_disable" href="community.html">Communauté</a>
                     </li>
+
+                    <!-- php ici si utilisateur connecté alors redirection vers page profil.php sinon redirection vers page index.html -->
                     <li class="nav-item">
                         <a class="nav-link link_enable" href="profil.php">Profil</a>
                     </li>  
@@ -41,7 +43,7 @@
                     </div>
                 </div>
 
-                <button class=" bouton_style valider_bouton" type="submit">Rechercher</button>
+                <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
             <div class="container content" style="background-color:yellow;"> 
@@ -162,7 +164,7 @@
                                     <input type="text" class="reader_pseudo" name="pseudo" placeholder="Nom utilisateur" required />
                                 </label>
 
-                                <button class="bouton_style" style="margin-left:8%;display:inline-block;outline:0;cursor:pointer;" type="submit">Rechercher</button>
+                                <a href="findreader.html"><button class="bouton_style" style="margin-left:8%;display:inline-block;outline:0;cursor:pointer;" type="submit">Rechercher</button></a>
                             </form>
 
                             <button class="advanced_search_button" style="cursor:pointer;outline:0;" onclick="show_advanced_search()">
@@ -174,7 +176,7 @@
                                 <div class="col-md-12">
                                     <h3 style="text-align:left;">>> Genre</h3>
                                     <label for="sexe" class="input_text" style="display:inline-block;width:100%;border:none;">
-                                        <input name="sex" type="radio" style="margin:3%;outline:0;cursor:pointer;" value="H">Homme
+                                        <input name="sex" type="radio" style="margin:3%;outline:0;cursor:pointer;" value="H" checked>Homme
                                         <input type="radio" name="sex" style="margin:3%;outline:0;cursor:pointer;" value="F">Femme
                                     </label>
 
@@ -204,8 +206,7 @@
                                         </select>
                                     </label> 
 
-                                    <button class="bouton_style" style="margin-top:5%;margin-left:65%;cursor:pointer;outline:0;" type="submit">Rechercher</button>
-
+                                    <a href="findreader.html"><button class="bouton_style" style="margin-top:5%;margin-left:65%;cursor:pointer;outline:0;" type="submit">Rechercher</button></a>
                                 </div>                            
                             </div>
                         </div>

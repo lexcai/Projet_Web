@@ -62,7 +62,7 @@ include_once('bdd.php');
                     </div>
                 </div>
 
-                <button class="bouton_style valider_bouton" type="submit">Rechercher</button>
+                <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
 

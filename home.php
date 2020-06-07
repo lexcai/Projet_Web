@@ -69,7 +69,7 @@ include_once('bdd.php');
                   <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
                </div>
             </div>
-            <button class="bouton_style valider_bouton" type="submit">Rechercher</button>
+            <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
          </nav>
 
          <!-- Message de bienvenue -->
