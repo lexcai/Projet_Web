@@ -3,25 +3,11 @@
     session_start();
 
     $ancien_pseudo = $_SESSION['pseudo'];
-    $pseudo = htmlspecialchars($_POST['pseudo']);
-    $email = htmlspecialchars($_POST['mail']);
-    $pays = htmlspecialchars($_POST['pays']);
-    $age = htmlspecialchars($_POST['age']);
-    $query1 = $pdo->prepare("UPDATE membres SET pseudo_membre=\"$pseudo\", mail_membre=\"$email\", pays=\"$pays\", age=\"$age\" WHERE pseudo_membre=\"$ancien_pseudo\";");
+    $role = $_POST['role'];
+    $query1 = $pdo->prepare("UPDATE bookclub.membres SET role=\"$role\" WHERE pseudo_membre=\"$ancien_pseudo\";");
     $query1->execute();
-    $query2 = $pdo->prepare('SELECT * FROM membres');
-    $query2->execute();
-    $liste_membre = $query2->fetchAll();
-    foreach ($liste_membre as $membre) {
-        if ($membre['pseudo_membre'] == $pseudo) {
-            $pseudo = $membre['pseudo_membre'];
-            $email = $membre['mail_membre'];
-            $pays = $membre['pays'];
-            $age = $membre['age'];
-        }
 
-    }
-    $_SESSION['pseudo'] = $pseudo;
-    header('Location:http://localhost:8080/TP/Projet_Web/php/profil.php');
+
+    header('Location:http://localhost:8080/TP/Projet_Web/php/moderation_membres.php');
     exit;
 ?>
