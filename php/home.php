@@ -243,6 +243,7 @@ include_once('bdd.php');
                            echo "<a class=\"decoration\" href=\"livre.php?$parametre\">";
                      ?>
                      <h2>
+                     
                      <?php
                            echo "<img style=\"width: 100px; height: 100px\" src=$photo ><br>";
                            echo "$titre<br>";

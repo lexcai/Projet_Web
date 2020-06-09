@@ -38,7 +38,7 @@ include_once('bdd.php');
             <!-- la barre de navigation responsive avec Bootstrap -->
             <nav class="navbar fixed_top navbar-expand-sm nav_bar_style">
                 <!-- Logo en haut à gauche -->
-                <a href="../html/index.html"><img class='logo' src="logo/logo_lighter.png" alt="BookClub logo" /></a>
+                <a href="../html/index.html"><img class='logo' src="./logo/logo_lighter.png" alt="BookClub logo" /></a>
                 
                 <!-- liens, celui de la page actuelle est désactivé -->
                 <ul class="navbar-nav links_position">
