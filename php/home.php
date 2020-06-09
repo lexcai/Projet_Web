@@ -90,7 +90,7 @@ include_once('bdd.php');
          ?>
          <a href="./moderation_livres.php">Moderation livres</a>
          <a href="./moderation_membres.php">Moderation membres</a>
-         
+         <a href="./ajout_livres.php">Ajout de livres</a>
 
          <?php }
                }

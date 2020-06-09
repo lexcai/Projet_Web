@@ -23,11 +23,11 @@
         <h1>Formulaire Modification membre</h1>
         <button onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/php/moderation_membres.php';">Retour</button>
             <form action="update_donnees_membre.php" method="post"> </br>
-                <select name="choix">
+                <select name="role">
                     <option value="Membre">Membre</option>
-                    <option value="super_Membre">Super Membre</option>
+                    <option value="Super_Membre">Super Membre</option>
                 </select>
-                <button type="submit">Modifier</button>
+                <input type="hidden" name="pseudo" value="<?php echo $pseudo ?>" /> <button type=submit> Modifier </button>
             </form>
     </body>
 </html>
