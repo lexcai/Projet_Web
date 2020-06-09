@@ -43,7 +43,7 @@ include_once('bdd.php');
             <!-- liens, celui de la page actuelle est désactivé -->
             <ul class="navbar-nav links_position">
                <li class="nav-item">
-                  <a class="nav-link disabled link_disable" href="home.php">Page d'accueil</a>
+                  <a class="nav-link disabled link_disable">Page d'accueil</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link link_enable" href="../html/about_us.html">A propos</a>
@@ -69,7 +69,7 @@ include_once('bdd.php');
                   <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
                </div>
             </div>
-            <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
+            <a href="../html/research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
          </nav>
 
          <!-- Message de bienvenue -->

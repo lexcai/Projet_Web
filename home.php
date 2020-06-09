@@ -214,16 +214,7 @@ include_once('bdd.php');
                   <span class="sr-only">Next</span>
                </a>
             </div>
-
-
-
          </div>
-         
-
-
-
-
-         
 
          <?php
                   echo "<h2>Liste des livres :</h2>";

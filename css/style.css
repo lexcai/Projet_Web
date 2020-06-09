@@ -406,7 +406,12 @@ input#file{
   object-fit: cover;
 }
 
+/*-----------------------------------------------*/
+/*page resultats  de cherche*/
 
-error_search{
-  border:solid 1px black;display:block;margin-top:10px;padding:5%;padding-left:0;
+.error_research{
+  border:solid 1px black;
+  margin-top:10px;
+  padding:5%;
+  padding-left:0;
 }

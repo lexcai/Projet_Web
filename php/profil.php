@@ -51,7 +51,7 @@ include_once('bdd.php');
                         <a class="nav-link link_enable" href="../html/community.html">Communauté</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled link_disable" href="profil.html">Profil</a>
+                        <a class="nav-link disabled link_disable">Profil</a>
                     </li>  
                 </ul>
 
@@ -62,7 +62,7 @@ include_once('bdd.php');
                     </div>
                 </div>
 
-                <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
+                <a href="../html/research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
 
