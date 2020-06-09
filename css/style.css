@@ -410,8 +410,12 @@ input#file{
 /*page resultats  de cherche*/
 
 .error_research{
-  border:solid 1px black;
-  margin-top:10px;
   padding:5%;
   padding-left:0;
+  position: relative;
+}
+.no_error_research{
+  padding:5%;
+  padding-left:0;
+  position: relative;
 }

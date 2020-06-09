@@ -165,7 +165,7 @@ include_once('bdd.php');
                                     <div class="d-inline">Total livres enregistrés:</div>
                                     <div class="d-inline" style="float:center;">PHP number</div>
                                     <div class="d-inline"">
-                                        <a href="library.html" class="more" style="margin-left:30%;">Voir plus...</a>
+                                        <a href="../html/library.html" class="more" style="margin-left:30%;">Voir plus...</a>
                                     </div>
                                 </div>
                             
@@ -201,7 +201,7 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="container more_box">
-                                            <a href="finished.html" class="more">Voir plus...</a>
+                                            <a href="../html/finished.html" class="more">Voir plus...</a>
                                         </div>
 
                                     </div>
@@ -236,7 +236,7 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="container more_box">
-                                            <a href="reading.html" class="more">Voir plus...</a>
+                                            <a href="../html/reading.html" class="more">Voir plus...</a>
                                         </div>
 
                                     </div>
@@ -271,7 +271,7 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="container more_box">
-                                            <a href="next_books.html" class="more">Voir plus...</a>
+                                            <a href="../html/next_books.html" class="more">Voir plus...</a>
                                         </div>
                                     </div>
                                 </div>
