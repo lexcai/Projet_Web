@@ -37,7 +37,7 @@ session_start();
       <tr>
           <?php foreach ($liste as $donnees) { ?>
        <td><?php echo $donnees['titre']; ?></td>
-       <td><?php echo $donnees['auteur']; ?></td>
+       <td><?php echo $donnees['auteur']; ?></td> <br>
        </tr>
     <?php
     }
