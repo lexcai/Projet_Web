@@ -20,7 +20,7 @@
                 <!-- liens, celui de la page actuelle est désactivé -->
                 <ul class="navbar-nav links_position">
                     <li class="nav-item">
-                        <a class="nav-link link_enable " href="../php/home.php">Page d'accueil</a>
+                        <a class="nav-link link_enable " href="home.html">Page d'accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link_enable" href="about_us.html">A propos</a>
@@ -40,14 +40,30 @@
                     </div>
                 </div>
 
-                <button class="valider_bouton" type="submit">Rechercher</button>
+                <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
-            <div class="container content"> 
+            <div class="container content" style="background-color:yellow;height:1500px;"> 
                 <!-- php et js ici
                  affiche tous les livres qui correspondent à la description 
                  (mots clés de recherches entrés par l'utilisateur) 
                  informations: titre artiste genre et photo -->
+
+
+                <!-- 1/ calcul nombre de résultats de la recherche
+                     2/ if nbr=0; affiche cette div:-->
+
+                <div class=" container error_research" style="">
+                
+                    <h2 style="font-size:20px;margin:0;margin-bottom:5%;width:100%;">Il semblerait qu'il n'y ait pas de résultats de votre recherche : "php mots clés"</h2>
+                    <h3 style="margin-left:4%;"> Voici quelques conseils pour vous aider à trouver votre bonheur:</h3>
+                    <ul style="list-style-type: none;">
+                        <li style="margin:3px;">- Vérifiez l'orthographe des mots utilisés</li>
+                        <li style="margin:3px;">- Évitez les abréviations</li>
+                        <li style="margin:3px;">- Tapez un minimum de mots clés dans votre recherche</li>
+                    </ul>
+                
+                </div>
             </div>
         </div>
 
