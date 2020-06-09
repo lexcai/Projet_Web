@@ -56,6 +56,11 @@ include_once('bdd.php');
                <li class="nav-item">
                   <a class="nav-link link_enable" href="profil.php">Profil</a>
                </li>  
+
+               <li class="nav-item">
+                  <a class="nav-link link_enable" href="../html/message.html"><img class='notif' src="../icons/" alt="notifications" /></a>
+            
+               </li>  
             </ul>
 
             <!-- php ici
@@ -98,7 +103,7 @@ include_once('bdd.php');
                }
       ?>
 
-      
+
       <!-- le container de la page avec tous les éléments de la page -->
       <div class="container content_box_home"> 
 
