@@ -66,7 +66,7 @@ include_once('bdd.php');
                         <a class="nav-link link_enable" href="../html/community.html">Communauté</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled link_disable" href="profil.html">Profil</a>
+                        <a class="nav-link disabled link_disable">Profil</a>
                     </li>  
                 </ul>
 
@@ -77,7 +77,7 @@ include_once('bdd.php');
                     </div>
                 </div>
 
-                <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
+                <a href="../html/research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
 
@@ -220,7 +220,7 @@ include_once('bdd.php');
                                     <div class="d-inline">Total livres enregistrés:</div>
                                     <div class="d-inline" style="float:center;">PHP number</div>
                                     <div class="d-inline"">
-                                        <a href="library.html" class="more" style="margin-left:30%;">Voir plus...</a>
+                                        <a href="../html/library.html" class="more" style="margin-left:30%;">Voir plus...</a>
                                     </div>
                                 </div>
                             
@@ -256,7 +256,7 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="container more_box">
-                                            <a href="finished.html" class="more">Voir plus...</a>
+                                            <a href="../html/finished.html" class="more">Voir plus...</a>
                                         </div>
 
                                     </div>
@@ -291,7 +291,7 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="container more_box">
-                                            <a href="reading.html" class="more">Voir plus...</a>
+                                            <a href="../html/reading.html" class="more">Voir plus...</a>
                                         </div>
 
                                     </div>
@@ -326,7 +326,7 @@ include_once('bdd.php');
                                         </div>
 
                                         <div class="container more_box">
-                                            <a href="next_books.html" class="more">Voir plus...</a>
+                                            <a href="../html/next_books.html" class="more">Voir plus...</a>
                                         </div>
                                     </div>
                                 </div>

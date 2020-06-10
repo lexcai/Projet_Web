@@ -43,7 +43,7 @@ include_once('bdd.php');
             <!-- liens, celui de la page actuelle est désactivé -->
             <ul class="navbar-nav links_position">
                <li class="nav-item">
-                  <a class="nav-link disabled link_disable" href="home.php">Page d'accueil</a>
+                  <a class="nav-link disabled link_disable">Page d'accueil</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link link_enable" href="../html/about_us.html">A propos</a>
@@ -55,6 +55,11 @@ include_once('bdd.php');
                <!-- php ici si utilisateur connecté alors redirection vers page profil.php sinon redirection vers page index.html -->
                <li class="nav-item">
                   <a class="nav-link link_enable" href="profil.php">Profil</a>
+               </li>  
+
+               <li class="nav-item">
+                  <a class="nav-link link_enable" href="../html/message.html"><img class='notif' src="../icons/" alt="notifications" /></a>
+            
                </li>  
             </ul>
 
@@ -69,7 +74,7 @@ include_once('bdd.php');
                   <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
                </div>
             </div>
-            <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
+            <a href="../html/research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
          </nav>
 
          <!-- Message de bienvenue -->
@@ -79,6 +84,8 @@ include_once('bdd.php');
            <br>Et partagez votre avis.</p>  
          </div>
       </div>
+
+
       <?php /*Liens de moderation[en cours]
                Probleme :
                mise en page
@@ -95,6 +102,8 @@ include_once('bdd.php');
          <?php }
                }
       ?>
+
+
       <!-- le container de la page avec tous les éléments de la page -->
       <div class="container content_box_home"> 
 
@@ -106,27 +115,27 @@ include_once('bdd.php');
 
          <div class="container" name="selectionS">
             
-            <!--Selection 2 seulement si utilisateur est connecté = séléction personnelle-->
+            <!--Selection 1 = livres récemment ajoutés-->
             <div id="selection1" class="carousel slide selection1" data-ride="carousel">
                <div class="carousel-inner">
 
                   <!--slide1-->
                   <div class="carousel-item active" name="slide_1">
                      <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img1.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img2.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img1.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img2.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img3.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img4.png" alt=""></div>
                      </div>
                   </div>
 
                   <!--slide 2-->
                   <div class="carousel-item" name="slide_2">
                      <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img5.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img6.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img3.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img4.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img5.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img6.png" alt=""></div>
                      </div>
                   </div>
                </div>
@@ -143,27 +152,27 @@ include_once('bdd.php');
 
 
 
-            <!--Selection 3 = livres récemment ajoutés-->
+            <!--Selection 2 seulement si utilisateur est connecté = séléction personnelle-->
             <div id="selection2" class="carousel slide selection" data-ride="carousel">
                <div class="carousel-inner">
 
                   <!--slide1-->
                   <div class="carousel-item active" name="slide_1">
                      <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img1.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img2.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img1.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img2.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img3.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img4.png" alt=""></div>
                      </div>
                   </div>
 
                   <!--slide 2-->
                   <div class="carousel-item" name="slide_2">
                      <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img5.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img6.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img3.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img4.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img5.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img6.png" alt=""></div>
                      </div>
                   </div>
                </div>
@@ -187,20 +196,20 @@ include_once('bdd.php');
                   <!--slide1-->
                   <div class="carousel-item active" name="slide_1">
                      <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img1.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img2.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img1.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img2.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img3.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img4.png" alt=""></div>
                      </div>
                   </div>
 
                   <!--slide 2-->
                   <div class="carousel-item" name="slide_2">
                      <div class="row">
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img3.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img4.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img5.png" alt=""></div>
-                        <div class="col-3"><img class="d-block w-100" src="selection_livres/img6.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img3.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img4.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img5.png" alt=""></div>
+                        <div class="col-3"><img class="d-block w-100" src="../selection_livres/img6.png" alt=""></div>
                      </div>
                   </div>
                </div>
@@ -214,17 +223,8 @@ include_once('bdd.php');
                   <span class="sr-only">Next</span>
                </a>
             </div>
-
-
-
          </div>
-         
-
-
-
-
-         
-
+        
          <?php
                   echo "<h2>Liste des livres :</h2>";
                   foreach ($liste_livres as $livres) {
