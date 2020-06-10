@@ -9,6 +9,7 @@ foreach ($liste_membres as $membres) {
         $mail = $membres['mail_membre'];
         $pays = $membres['pays'];
         $age = $membres['age'];
+        $bio = $membres['bio'];
     }
 ?>
 
@@ -30,7 +31,7 @@ foreach ($liste_membres as $membres) {
                
          <div class="title_page">Modifier vos données</div>
          
-         <form method="POST" action="update_donnees_membre.php">
+         <form method="POST" action="modif_donnees_membre.php">
                   
             <label for="pseudo" class="input_inscription">
                <div>Nom utilisateur</div>
@@ -50,6 +51,11 @@ foreach ($liste_membres as $membres) {
             <label for="age" class="input_inscription">
                <div>Votre âge</div>
                <input class="age" name="age" type="number" value="<?php echo"$age"?>" required/>
+            </label>
+
+            <label for="bio" class="input_inscription">
+               <div>Votre bio</div>
+               <textarea class="bio" name="bio" type="text" value="<?php echo"$bio"?>" required></textarea>
             </label>
 
             

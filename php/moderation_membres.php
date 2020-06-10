@@ -21,7 +21,7 @@ session_start();
    <br>
    <h2>Suppresion membre :</h2>
    <form action="suppresion_membre.php" method="post">
-            <input type="text" name="pseudo" placeholder="Pseudo du membre"/>
+            <input type="text" name="pseudo_membre" placeholder="Pseudo du membre"/>
             <button type="submit" name="supp_m">Supprimer un membre</button>
         </form>
     <br>

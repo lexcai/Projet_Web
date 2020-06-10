@@ -2,21 +2,36 @@
 session_start();
 
 include_once('bdd.php');
-                $pseudo = $_SESSION['pseudo'];
-                $query1 = $pdo->prepare("SELECT * FROM membres WHERE pseudo_membre='" . $_SESSION['pseudo'] . "'");
-                $query1->execute();
-                $liste_membres = $query1->fetchAll();
-                foreach ($liste_membres as $membres) {
-                        $id_membre = $membres['id_membre'];
-                        $pseudo = $membres['pseudo_membre'];
-                        $role = $membres['role'];
-                        $mail = $membres['mail_membre'];
-                        $pays = $membres['pays'];
-                        $sexe = $membres['sex'];
-                        $age = $membres['age'];
-                        $date = $membres['date_creation'];
-                        $photo = $membres['photo'];
-                    }
+    $pseudo = $_SESSION['pseudo'];
+    $query1 = $pdo->prepare("SELECT * FROM membres WHERE pseudo_membre='" . $_SESSION['pseudo'] . "'");
+    $query1->execute();
+    $liste_membres = $query1->fetchAll();
+    foreach ($liste_membres as $membres) {
+        $id_membre = $membres['id_membre'];
+        $pseudo = $membres['pseudo_membre'];
+        $role = $membres['role'];
+        $mail = $membres['mail_membre'];
+        $pays = $membres['pays'];
+        $sexe = $membres['sex'];
+        $age = $membres['age'];
+        $date = $membres['date_creation'];
+        $photo = $membres['photo'];
+        $bio = $membres['bio'];
+    }
+    $query2 = $pdo->prepare("SELECT * FROM root WHERE pseudo_root='" . $_SESSION['pseudo'] . "'");
+    $query2->execute();
+    $liste_root = $query2->fetchAll();
+    foreach ($liste_root as $membres) {
+        $pseudo_root = $membres['pseudo_root'];
+        $role_root = $membres['role'];
+        $mail_root = $membres['mail_root'];
+        $pays_root = $membres['pays'];
+        $sexe_root = $membres['sex'];
+        $age_root = $membres['age'];
+        $photo_root = $membres['photo'];
+        $bio_root = $membres['bio'];
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -90,7 +105,18 @@ include_once('bdd.php');
                     <div class="col-md-3 col-lg-3 col-xl-3">
                         <div class="col-md-12" style="background-color:coral;padding-top:30px;padding-bottom:30px;"> 
                             <div class="pic_parent" style="margin-top:2px;">
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                    if ($_SESSION['table']  == 'membres') { ?>
                                 <img class='profil_pic' src="<?php echo $membres['photo']; ?>"/>
+                                <?php }
+                                       }
+                                ?>
+                                <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                    if ($_SESSION['table']  == 'root') { ?>
+                                <img class='profil_pic' src="<?php echo $photo_root; ?>"/>
+                                <?php }
+                                       }
+                                ?>
                                 <button class='profil_pic edit_pic_button' onclick="showDiv()"></button>                                                      
                             </div>
 
@@ -104,26 +130,55 @@ include_once('bdd.php');
                             </div>  
                             
                             <div class="items_box">
-                                <h1 class='pseudo'><?php echo $pseudo?></h1>
-                                <?php echo'<img class="icon_gender" src="icons/icon_',$sexe, '.png"/>';?>
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                    if ($_SESSION['table']  == 'membres') { ?>
+                                        <h1 class='pseudo'><?php echo $pseudo?></h1>
+                                        <?php echo'<img class="icon_gender" src="icons/icon_',$sexe, '.png"/>';?>
+                            <?php }
+                               }
+                            ?>
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                        if ($_SESSION['table']  == 'root') { ?>
+                                            <h1 class='pseudo'><?php echo $pseudo_root?></h1>
+                                            <?php echo'<img class="icon_gender" src="icons/icon_',$sexe_root, '.png"/>';?>
+                            <?php }
+                               }
+                            ?>
                             </div>
 
                             <div class="three_infos">
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                        if ($_SESSION['table']  == 'membres') { ?>
                                 <h3 class="three_infos_style">Statut: <?php echo $role?>
                                 </br>Membre depuis: <?php echo $date?></h3>
+                            <?php }
+                               }
+                            ?>
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                        if ($_SESSION['table']  == 'root') { ?>
+                                <h3 class="three_infos_style">Statut: <?php echo $role_root?>
+                            <?php }
+                               }
+                            ?>
                             </div>
                             
                             <!-- multi-lines input pour la BIO -->
                             <!-- contenu bio de l'utilisateur php -->
                             <div class="bio_box">
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                        if ($_SESSION['table']  == 'membres') { ?>
                                 <h3 class="bio_title" style="text-align:center;">Votre bio</h3>
-                                <textarea id="bio_box" name="Bio" style="margin-left:1%;" onclick="showButton()" rows="3" cols="17">
-                                
-                                </textarea>
-                                
-                                <!--bouton qui envoie la bio dans la bdd de l'utilisateur
-                                    rajoute onclick = envoi de la bio dans la bdd -->
-                                <button class="bouton_style" id="save_bio" type="submit" name="save_bio" style="display:none;" onclick="hideButton()">Modifier</button>
+                                <?php echo $bio?>
+                            <?php }
+                               }
+                            ?>
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                                        if ($_SESSION['table']  == 'root') { ?>
+                                <h3 class="bio_title" style="text-align:center;">Votre bio</h3>
+                                <?php echo $bio_root?>
+                            <?php }
+                               }
+                            ?>
                             </div>      
                         </div>              
                     </div>
