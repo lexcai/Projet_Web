@@ -1,3 +1,50 @@
+<?php
+include_once('bdd.php');
+
+if (! empty($_POST['mot_cle'])) {
+    $mot_cle = $_POST['mot_cle'];
+    $liste_mot_cle = explode(' ', $mot_cle);
+} else {
+    $mot_cle = '';
+}
+if (! empty($_POST['titre'])) {
+    $titre = $_POST['titre'];
+} else {
+    $titre = '';
+}
+if (! empty($_POST['auteur'])) {
+    $auteur = $_POST['auteur'];
+} else {
+    $auteur = '';
+}
+
+if (! empty($_POST['genre'])) {
+    $genre = $_POST['genre'];
+} else {
+    $genre = '';
+}
+
+if (! empty($_POST['editeur'])) {
+    $editeur = $_POST['editeur'];
+} else {
+    $editeur = '';
+}
+if (! empty($_POST['note_min'])) {
+    $note_min = $_POST['note_min'];
+} else {
+    $note_min = 0;
+}
+if (! empty($_POST['note_max'])) {
+    $note_max = $_POST['note_max'];
+} else {
+    $note_max = 5;
+}
+$query_prepare_requete = "SELECT * FROM livres WHERE titre LIKE '%$titre%' AND auteur LIKE '%$auteur%' AND genre LIKE '%$genre%' AND editeur LIKE '%$editeur%' AND note BETWEEN $note_min AND $note_max"; 
+$query1= $pdo->prepare($query_prepare_requete);
+$query1->execute();
+$liste = $query1->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -35,7 +82,7 @@
 
                 <div class="form-group row">
                     <div class="col-xs-2 input_search_box">
-                        <label for="search"></label>
+                    <label for="search"></label>
                         <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
                     </div>
                 </div>
@@ -63,7 +110,27 @@
                  affiche tous les livres qui correspondent qux mots clés de la recherche
                  informations: titre auteur et photo
                  liens qui renvoie vers book.html -->
-
+                 <h1>Liste des livres</h1>
+                    <table>
+                    <thead>
+                        <tr>
+                        <th>Titre</th>
+                        <th>Auteur</th>
+                        <th>Genre</th>
+                        <th>Editeur</th>
+                        <th>Note</th>
+                        </tr>
+                        <tr>
+                        <?php foreach ($liste as $donnees) { ?>
+                            <td><?php echo $donnees['titre']; ?></td>
+                            <td><?php echo $donnees['auteur']; ?></td> 
+                            <td><?php echo $donnees['genre']; ?></td> 
+                            <td><?php echo $donnees['editeur']; ?></td>
+                            <td><?php echo $donnees['note']; ?></td><br>
+                        </tr>
+                        <?php
+                        }
+                        ?>
 
                 <!-- 1/ calcul nombre de résultats de la recherche
                      2/ if nbr=0; affiche cette div: (fonction js)-->

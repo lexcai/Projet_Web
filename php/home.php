@@ -72,11 +72,10 @@ include_once('bdd.php');
             si aucun mot clé rentré; nombre de résultat = 0 -->
             <div class="form-group row">
                <div class="col-xs-2 input_search_box">
-                  <label for="search"></label>
-                  <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
+                 <label for="search"></label>
                </div>
-            </div>
-            <a href="../html/research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
+               </div>
+               <a href="../html/form_recherche.html"> <button class="bouton_style valider_bouton" type="submit" style="margin-left:1%;">Rechercher</button></a>
          </nav>
 
          <!-- Message de bienvenue -->
