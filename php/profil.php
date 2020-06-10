@@ -16,6 +16,7 @@ include_once('bdd.php');
                         $age = $membres['age'];
                         $date = $membres['date_creation'];
                         $photo = $membres['photo'];
+                        $bio = $membres['bio'];
                     }
 ?>
 
@@ -117,13 +118,7 @@ include_once('bdd.php');
                             <!-- contenu bio de l'utilisateur php -->
                             <div class="bio_box">
                                 <h3 class="bio_title" style="text-align:center;">Votre bio</h3>
-                                <textarea id="bio_box" name="Bio" style="margin-left:1%;" onclick="showButton()" rows="3" cols="17">
-                                
-                                </textarea>
-                                
-                                <!--bouton qui envoie la bio dans la bdd de l'utilisateur
-                                    rajoute onclick = envoi de la bio dans la bdd -->
-                                <button class="bouton_style" id="save_bio" type="submit" name="save_bio" style="display:none;" onclick="hideButton()">Modifier</button>
+                                <?php echo $bio?>
                             </div>      
                         </div>              
                     </div>
@@ -136,7 +131,7 @@ include_once('bdd.php');
                                     <button class="bouton_style deconnexion" type="submit">Deconnexion</button>
                                 </form>
 
-                                <button class="bouton_style edit_profil" name="edit_profil" style="float:right;" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/modification_membre.php';">Compte</button>
+                                <button class="bouton_style edit_profil" name="edit_profil" style="float:right;" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/php/modification_membre.php';">Compte</button>
                             </div>
 
                             
