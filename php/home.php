@@ -53,9 +53,11 @@ include_once('bdd.php');
                </li>
 
                <!-- php ici si utilisateur connecté alors redirection vers page profil.php sinon redirection vers page index.html -->
+               <?php if (isset($_SESSION['IS_CONNECTED'])) {?>
                <li class="nav-item">
                   <a class="nav-link link_enable" href="profil.php">Profil</a>
-               </li>  
+               </li> 
+               <?php }?>
 
                <li class="nav-item">
                   <a class="nav-link link_enable" href="../html/message.html"><img class='notif' src="../icons/" alt="notifications" /></a>
