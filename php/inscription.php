@@ -49,7 +49,7 @@
 
             
             <div class=div_buttons>
-               <input class="inscription_boutons" type="button" name="home" value="Retour" onclick="self.location.href='./index.html'">
+               <input class="inscription_boutons" type="button" name="home" value="Retour" onclick="self.location.href='../html/index.html'">
                <input class="inscription_boutons" type="submit" name="inscription_membre"/>
             </div>
          </form>
