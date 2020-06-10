@@ -5,8 +5,8 @@
       <meta charset="utf-8">
 
       <!-- fichiers css dans un dossier css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/style_starter.css">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/style_starter.css">
    </head>
 
    <body class="container-fluid windows">
