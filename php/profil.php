@@ -136,7 +136,7 @@ include_once('bdd.php');
                                     <button class="bouton_style deconnexion" type="submit">Deconnexion</button>
                                 </form>
 
-                                <button class="bouton_style edit_profil" name="edit_profil" style="float:right;" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/modification_membre.php';">Compte</button>
+                                <button class="bouton_style edit_profil" name="edit_profil" style="float:right;" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/php/modification_membre.php';">Compte</button>
                             </div>
 
                             
