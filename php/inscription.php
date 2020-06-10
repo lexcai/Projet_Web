@@ -5,14 +5,14 @@
       <meta charset="utf-8">
 
       <!-- fichiers css dans un dossier css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/style_starter.css">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/style_starter.css">
    </head>
 
    <body class="container-fluid windows">
       <div class="container content">
 
-         <a href="index.html"><img class='logo' src="logo/logo_lighter.png" alt="BookClub logo" /></a>
+         <a href="index.html"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
                
          <div class="title_page">Inscrivez-vous</div>
          
