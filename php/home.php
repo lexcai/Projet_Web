@@ -112,6 +112,7 @@ include_once('bdd.php');
             <hr>
             <h1>Nos livres séléctionnés rien que pour vous</h1>
             <hr>
+            
          </div>
 
          <div class="container" name="selectionS">
@@ -227,33 +228,38 @@ include_once('bdd.php');
          </div>
         
          <?php
-                  echo "<h2>Liste des livres :</h2>";
-                  foreach ($liste_livres as $livres) {
-                     $photo = $livres['photo'];
-                     $titre = $livres['titre'];
-                     $auteur = $livres['auteur'];
-                     $genre = $livres['genre'];
-                     $editeur = $livres['editeur'];
-                     $resume = $livres['resume'];
-                     $date_parrution = $livres['date_parrution'];
-                     $note = $livres['note'];
-                     $parametre = "photo=$photo&titre=$titre&auteur=$auteur&genre=$genre&editeur=$editeur&resume=$resume&date_parrution=$date_parrution&note=$note";
+            echo "<h2>Liste des livres :</h2>";
+            foreach ($liste_livres as $livres) {
+               $photo = $livres['photo'];
+               $titre = $livres['titre'];
+               $auteur = $livres['auteur'];
+               $genre = $livres['genre'];
+               $editeur = $livres['editeur'];
+               $resume = $livres['resume'];
+               $date_parrution = $livres['date_parrution'];
+               $note = $livres['note'];
+               $parametre = "photo=$photo&titre=$titre&auteur=$auteur&genre=$genre&editeur=$editeur&resume=$resume&date_parrution=$date_parrution&note=$note";
          ?>
-                     <div class="livres">
-                     <?php
-                           echo "<a class=\"decoration\" href=\"livre.php?$parametre\">";
-                     ?>
-                     <h2>
-                     <?php
-                           echo "<img style=\"width: 100px; height: 100px\" src=$photo ><br>";
-                           echo "$titre<br>";
-                           echo "$auteur<br>";
-                     ?>
-                     </h2>
-                     </a>
+         <div class="livres">
+         <?php
+               echo "<a class=\"decoration\" href=\"livre.php?$parametre\">";
+         ?>
+
+         <h2>
+            <?php
+                  echo "<img style=\"width: 100px; height: 100px\" src=$photo ><br>";
+                  echo "$titre<br>";
+                  echo "$auteur<br>";
+            ?>
+         </h2>
+               </a> 
          </div>
+
+         
          <?php } ?>
 
+         
+      </div>
       
 
 

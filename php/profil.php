@@ -130,18 +130,22 @@ include_once('bdd.php');
                             </div>  
                             
                             <div class="items_box">
-                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                            <?php 
+                                if (isset($_SESSION['IS_CONNECTED'])) {
                                     if ($_SESSION['table']  == 'membres') { ?>
                                         <h1 class='pseudo'><?php echo $pseudo?></h1>
                                         <?php echo'<img class="icon_gender" src="icons/icon_',$sexe, '.png"/>';?>
-                            <?php }
+                            <?php 
+                                }
                                }
                             ?>
-                            <?php if (isset($_SESSION['IS_CONNECTED'])) {
+                            <?php 
+                                if (isset($_SESSION['IS_CONNECTED'])) {
                                         if ($_SESSION['table']  == 'root') { ?>
                                             <h1 class='pseudo'><?php echo $pseudo_root?></h1>
                                             <?php echo'<img class="icon_gender" src="icons/icon_',$sexe_root, '.png"/>';?>
-                            <?php }
+                            <?php 
+                                }
                                }
                             ?>
                             </div>
@@ -201,8 +205,7 @@ include_once('bdd.php');
                             <div class="books_div" style="margin-top:10%;">
                             
                                 <h2 style="text-align:left;">Vos livres enregistrés</h2>
-                                <--!entrez php pourcentage ici-->
-                                
+                                                                                              
                                 <div class="progress" style="margin-left:15px;margin-right:15px;height:30px">
                                     <div class="progress-bar progress-bar-success" role="progressbar" style="font-size:small;width:40%;background-color:green">
                                         livres lus

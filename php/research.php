@@ -107,7 +107,7 @@ $liste = $query1->fetchAll();
                 </script>
 
                 <!-- php et js ici
-                 affiche tous les livres qui correspondent qux mots clés de la recherche
+                 affiche tous les livres qui correspondent aux mots clés de la recherche
                  informations: titre auteur et photo
                  liens qui renvoie vers book.html -->
                  <h1>Liste des livres</h1>
@@ -156,17 +156,12 @@ $liste = $query1->fetchAll();
                     comme paramètre la liste des livres ou utilisateur
                     for each element in list do :-->
 
-                        <div class="container-fluid element">
-                            <a href="../html/wanted_element.html"><img name="photo_element" src="###" alt="photo résultat de recherche" /></a>
-                        </div>
-
+                    <div class="container-fluid element">
+                        <a href="../html/wanted_element.html"><img name="photo_element" src="###" alt="photo résultat de recherche" /></a>
+                    </div>
                 
                 </div>
-
-
             </div>
-        </div>
-
-        
+        </div>        
    </body>
 </html>
