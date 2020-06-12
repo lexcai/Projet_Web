@@ -88,17 +88,20 @@ session_start();
               <div class="col-md-1 col-lg-1 col-xl-1"></div>
             </div>
           </div>
-
         </div>
-                    
-        
 
-        <button class="valider_bouton" style="margin-left:40%;margin-top:0;" type="submit">Envoyer</button>
+        <button class="valider_bouton" style="margin:0;margin-left:40%;" type="submit">Envoyer</button>
       </form>
+     
+      <div class="text" style="padding:5%;padding-bottom:0;padding-top:0;">
+        <hr style="background-color:rgb(3, 66, 35);margin:5%;margin-bottom:10%;margin-top:0;">
+        <p style="margin-top:20px;">Un trou de mémoire?
+        </br>On s'en charge! Indiquez-nous juste le titre.</p>
+      </div>  
 
 
       <input type="text" placeholder="Titre d'un livre" id="terms" />
-      <button onClick="search()">Rechercher</button>
+      <button class="valider_bouton" style="font-size:small;margin:0;padding:5px;" onClick="search()">Rechercher</button>
       <ul id="results"></ul>
 
       <tbody>
