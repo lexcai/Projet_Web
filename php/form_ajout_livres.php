@@ -39,7 +39,7 @@ session_start();
       <form action="ajout_livres.php" method="post">
         <div class="container" style="margin-left:3%;">
           <div>
-            <label class="input_form">                  
+            <label class="input_form">
               <div>Titre</div>
               <input type="text" name="titre" required/> 
             </label>
@@ -99,10 +99,23 @@ session_start();
         </br>On s'en charge! Indiquez-nous juste le titre.</p>
       </div>  
 
+    
+      <div class="row" style="margin-top:10%;"> 
+        <div class="col-md-3 col-lg-3 col-xl-3"></div>
 
-      <input type="text" placeholder="Titre d'un livre" id="terms" />
-      <button class="valider_bouton" style="font-size:small;margin:0;padding:5px;" onClick="search()">Rechercher</button>
-      <ul id="results"></ul>
+        <div class="col-md-6 col-lg-6 col-xl-6">
+          <input type="text" placeholder="Titre d'un livre" id="terms" />
+          <button class="research_button valider_bouton" style="" onClick="search()">Rechercher</button>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-xl-3"></div>
+      </div>
+
+      <ul id="results">
+        <div id="results_message" style="display:none;">
+          Attendez on cherche...
+        </div>
+      </ul>
 
       <tbody>
         <table>
