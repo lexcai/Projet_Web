@@ -27,7 +27,7 @@ foreach ($liste_membres as $membres) {
    <body class="container-fluid windows">
       <div class="container content">
 
-         <a href="../hmtl/index.html"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
+         <a href="../php/home.php"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
                
          <div class="title_page">Modifier vos données</div>
          
