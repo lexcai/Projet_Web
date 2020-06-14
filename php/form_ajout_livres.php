@@ -22,13 +22,13 @@ session_start();
   </head>
 
   <body class="container-fluid windows">
-    <div class="container content" style="width:800px;">
+    <div class="container content" style="width:800px;border:none;">
 
       <a href="../php/home.php"><img class='logo' style="padding-left:37%;" src="../logo/logo_lighter.png" alt="BookClub logo"/></a>
 
       <button class="bouton_retour" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/php/home.php';">Retour</button>
 
-      <h1 class="title_page" style="color:rgb(62, 70, 3);">Partagez un nouveau livre</h1>
+      <h1 class="title_page2">Partagez un nouveau livre</h1>
 
       <div class="text" style="padding:5%;padding-bottom:0;">
         <p>Vous connaissez ce livre par coeur?
@@ -36,9 +36,9 @@ session_start();
       </div>  
 
     
-      <form action="ajout_livres.php" method="post">
-        <div class="container" style="margin-left:3%;">
-          <div>
+      <form action="ajout_livres.php" style="margin-top:5%;" method="post">
+        <div class="container" style="padding:3%;background-color:rgba(206, 192, 51, 0.44);">
+          <div style="margin-left:4%;">
             <label class="input_form">
               <div>Titre</div>
               <input type="text" name="titre" required/> 
@@ -55,7 +55,7 @@ session_start();
             </label>
           </div>
 
-          <div>
+          <div style="margin-left:4%;">
             <div class="row" style="padding-top:5%;">
               <div class="col-md-1 col-lg-1 col-xl-1"></div>
 
@@ -82,33 +82,37 @@ session_start();
               <div class="col-md-1 col-lg-1 col-xl-1"></div>
 
               <div class="col-md-10 col-lg-10 col-xl-10">
-                <textarea placeholder="Un petit résumé?" style="resize:none;color:rgb(39, 44, 4);padding:10px;border:1px solid black;" name="resume" rows="4" cols="50"></textarea>
+                <textarea class="resume_area" placeholder="Un petit résumé?" name="resume" rows="4" cols="50"></textarea>
               </div>
 
               <div class="col-md-1 col-lg-1 col-xl-1"></div>
             </div>
           </div>
+
+          <button class="valider_bouton" style="margin-left:40%;" type="submit">Envoyer</button>
         </div>
 
-        <button class="valider_bouton" style="margin:0;margin-left:40%;" type="submit">Envoyer</button>
+        
       </form>
      
       <div class="text" style="padding:5%;padding-bottom:0;padding-top:0;">
-        <hr style="background-color:rgb(3, 66, 35);margin:5%;margin-bottom:10%;margin-top:0;">
+        <hr style="background-color:rgb(3, 66, 35);margin:5%;margin-bottom:10%;margin-top:10%;">
+
         <p style="margin-top:20px;">Un trou de mémoire?
         </br>On s'en charge! Indiquez-nous juste le titre.</p>
       </div>  
 
-    
-      <div class="row" style="margin-top:10%;"> 
-        <div class="col-md-3 col-lg-3 col-xl-3"></div>
+      <div class="container" style="margin-top: 5%;background-color:rgba(206, 192, 51, 0.44);padding: 5%;"> 
+        <div class="row"> 
+          <div class="col-md-2 col-lg-2 col-xl-2"></div>
 
-        <div class="col-md-6 col-lg-6 col-xl-6">
-          <input type="text" placeholder="Titre d'un livre" id="terms" />
-          <button class="research_button valider_bouton" style="" onClick="search()">Rechercher</button>
+          <div class="col-md-8 col-lg-8 col-xl-8">
+            <input type="text" placeholder="Titre d'un livre" style="margin-left:8%;" id="terms" />
+            <button class="research_button valider_bouton" style="margin-right:8%;" onClick="search()">Rechercher</button>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2"></div>
         </div>
-
-        <div class="col-md-3 col-lg-3 col-xl-3"></div>
       </div>
 
       <ul id="results">

@@ -16,7 +16,7 @@
                
          <div class="title_page">Inscrivez-vous</div>
          
-         <form method="POST" action="creation_membre.php">
+         <form style="margin-left:4%;" method="POST" action="creation_membre.php">
                   
             <label for="pseudo" class="input_form">
                <div>Nom utilisateur</div>
