@@ -129,6 +129,7 @@ body, html {
 }
 
 .content{
+  padding-top: 2%;
   margin-top: 10%;
   height: auto;
   width: 80%;

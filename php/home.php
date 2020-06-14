@@ -21,9 +21,9 @@ include_once('bdd.php');
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Accueil</title>
+      <title>BookClub - Accueil</title>
 
-      <!-- css -->
+      <!-- css/js -->
       <link rel="stylesheet" href="../css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/style.css">
       <script src="../js/bootstrap.js"></script>

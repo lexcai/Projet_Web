@@ -90,9 +90,7 @@ session_start();
           </div>
 
           <button class="valider_bouton" style="margin-left:40%;" type="submit">Envoyer</button>
-        </div>
-
-        
+        </div>        
       </form>
      
       <div class="text" style="padding:5%;padding-bottom:0;padding-top:0;">

@@ -38,7 +38,7 @@ include_once('bdd.php');
 <html>
    <head>
         <meta charset="utf-8">
-        <title>Accueil</title>
+        <title>BookClub - Profil</title>
 
         <!-- css -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
