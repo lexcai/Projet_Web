@@ -52,31 +52,6 @@ session_start();
           </form>
         </div>
       </div>
-
-      
-
-      <table>
-        <thead>
-          <tr>
-            <th>Titre</th>
-            <th>Auteur</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <?php foreach ($liste as $donnees) { ?>
-
-            <td><?php echo $donnees['titre']; ?></td>
-            <td><?php echo $donnees['auteur']; ?></td>
-          </tr>
-            <?php
-            }
-            ?>
-        </tbody>
-      </table>
-
     </div>
-</body>
-
+  </body>
 </html>
