@@ -94,7 +94,7 @@ session_start();
       </form>
      
       <div class="text" style="padding:5%;padding-bottom:0;padding-top:0;">
-        <hr style="background-color:rgb(3, 66, 35);margin:5%;margin-bottom:10%;margin-top:10%;">
+        <hr style="background-color:rgba(102, 84, 16, 0.78);margin:5%;margin-bottom:10%;margin-top:10%;">
 
         <p style="margin-top:20px;">Un trou de mémoire?
         </br>On s'en charge! Indiquez-nous juste le titre.</p>

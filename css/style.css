@@ -124,8 +124,8 @@ body, html {
 .content_box_home{
   margin-top: 10%;
   width: 80%;
-  background-color: rgb(248, 255, 209);
-  border: solid 4px rgb(237, 245, 177);
+  background-color: rgba(213, 164, 102, 0.17);
+  border: 2px solid rgba(123, 94, 56, 0.03);
 }
 
 .content{
@@ -133,14 +133,14 @@ body, html {
   margin-top: 10%;
   height: auto;
   width: 80%;
-  background-color:transparent;
-  border:none;
+  background-color:rgba(213, 164, 102, 0.17);
+  border:2px solid rgba(123, 94, 56, 0.03);
 }
 
 hr{
   border: none;
-  border-top: 3px double rgb(47, 83, 55);
-  color: rgb(47, 83, 55);
+  border-top: 3px double rgba(145, 141, 66, 0.77);
+  color: rgba(145, 141, 66, 0.77);
   overflow: visible;
   text-align: center;
   height: 5px;
@@ -418,4 +418,20 @@ input#file{
   padding:5%;
   padding-left:0;
   position: relative;
+}
+
+/*-----------------------------------------------*/
+/*page livre*/
+
+.tag_style{
+  display: inline-block;
+  padding: 4px;
+  padding-right:10px;
+  background-color: #9145203b;
+  border-left: 3px solid #482e1fad;
+  font-size: small;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 3px;
+  margin-top: 2%;
 }
