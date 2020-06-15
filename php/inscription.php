@@ -10,7 +10,7 @@
    </head>
 
    <body class="container-fluid windows">
-      <div class="container content">
+      <div class="container content" style="margin-top:3%;">
 
          <a href="index.html"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
                

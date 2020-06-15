@@ -49,12 +49,11 @@ $liste = $query1->fetchAll();
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Accueil</title>
+      <title>BookClub - Résultats de recherche</title>
 
       <!-- css -->
       <link rel="stylesheet" href="../css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/style.css">
-
    </head>
    
    <body>
@@ -87,13 +86,10 @@ $liste = $query1->fetchAll();
                     </div>
                 </div>
 
-                <a href="research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
+                <a href="../html/form_recherche.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
-
-            
-
-            <div class="container content" style="background-color:yellow;height:1500px;"> 
+            <div class="container content" style="height:1500px;"> 
 
                 <script>
                     function error() {
@@ -110,27 +106,6 @@ $liste = $query1->fetchAll();
                  affiche tous les livres qui correspondent aux mots clés de la recherche
                  informations: titre auteur et photo
                  liens qui renvoie vers book.html -->
-                 <h1>Liste des livres</h1>
-                    <table>
-                    <thead>
-                        <tr>
-                        <th>Titre</th>
-                        <th>Auteur</th>
-                        <th>Genre</th>
-                        <th>Editeur</th>
-                        <th>Note</th>
-                        </tr>
-                        <tr>
-                        <?php foreach ($liste as $donnees) { ?>
-                            <td><?php echo $donnees['titre']; ?></td>
-                            <td><?php echo $donnees['auteur']; ?></td> 
-                            <td><?php echo $donnees['genre']; ?></td> 
-                            <td><?php echo $donnees['editeur']; ?></td>
-                            <td><?php echo $donnees['note']; ?></td><br>
-                        </tr>
-                        <?php
-                        }
-                        ?>
 
                 <!-- 1/ calcul nombre de résultats de la recherche
                      2/ if nbr=0; affiche cette div: (fonction js)-->
@@ -147,19 +122,39 @@ $liste = $query1->fetchAll();
                 </div>
 
                 <!--else: affiche cette div: (fonction js)-->
-                <div class=" container no_error_research" id="no_error_div" style="display:block;background-color:blue">
+                <div class=" container no_error_research" id="no_error_div" style="display:block;">
 
-                    <!-- dans cette div on affiche les livres ou utlisateyrs qui répondent aux critères de recherche-->
-                    <h2 style="font-size:20px;margin:0;margin-bottom:5%;width:100%;"> /nbr/ résultats pour votre recherche : "php mots clés"</h2>
+                    <!-- dans cette div on affiche les livres ou utlisateurs qui répondent aux critères de recherche-->
                     
                     <!-- 1 élément par ligne avec: image, titre et auteur ou pseudo faire une fonction en php avec
                     comme paramètre la liste des livres ou utilisateur
                     for each element in list do :-->
 
-                    <div class="container-fluid element">
-                        <a href="../html/wanted_element.html"><img name="photo_element" src="###" alt="photo résultat de recherche" /></a>
-                    </div>
-                
+
+                    <h1>Liste des livres</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Titre</th>
+                                <th>Auteur</th>
+                                <th>Genre</th>
+                                <th>Editeur</th>
+                                <th>Note</th>
+                            </tr>
+                            
+                            <tr>
+                            <?php foreach ($liste as $donnees) { ?>
+                                <td><?php echo $donnees['titre']; ?></td>
+                                <td><?php echo $donnees['auteur']; ?></td> 
+                                <td><?php echo $donnees['genre']; ?></td> 
+                                <td><?php echo $donnees['editeur']; ?></td>
+                                <td><?php echo $donnees['note']; ?></td><br>
+                            </tr>
+                            <?php
+                            }
+                            ?>
+                        </thead>
+                    </table>                
                 </div>
             </div>
         </div>        

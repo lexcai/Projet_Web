@@ -23,12 +23,11 @@ include_once('bdd.php');
 <html>
    <head>
         <meta charset="utf-8">
-        <title>Accueil</title>
+        <title>BookClub - Profil lecteur</title>
 
         <!-- css -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-                    
+        <link rel="stylesheet" href="../css/style.css">                    
    </head>
    
    <body>
