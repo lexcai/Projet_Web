@@ -12,7 +12,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>BookClub - Ajoutez un livre</title>
-    <meta name="description" content="Formulaire modification livre"/>
+    <meta name="description" content="Formulaire ajout livre"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="../js/search.js"></script>
 
@@ -107,41 +107,44 @@ session_start();
           <div class="col-md-8 col-lg-8 col-xl-8">
             <input type="text" placeholder="Titre d'un livre" style="margin-left:8%;" id="terms" />
             <button class="research_button valider_bouton" style="margin-right:8%;" onClick="search()">Rechercher</button>
+
+            <ul style="margin-top:5%;text-align:center;" id="results">
+              <div id="results_message" style="display:none;text-align:center;">
+                Attendez on cherche...
+              </div>
+            </ul>
           </div>
 
           <div class="col-md-2 col-lg-2 col-xl-2"></div>
         </div>
       </div>
 
-      <ul id="results">
-        <div id="results_message" style="display:none;">
-          Attendez on cherche...
-        </div>
-      </ul>
+<!-- ??? --->
+      <div style="display:none;"> 
+        <tbody>
+          <table>
+            <thead>
+              <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Genre</th>
+              </tr>
+            </thead>
 
-      <tbody>
-        <table>
-          <thead>
             <tr>
-              <th>Titre</th>
-              <th>Auteur</th>
-              <th>Genre</th>
+                <?php foreach ($liste as $donnees) { ?>
+              <td><?php echo $donnees['titre']; ?></td>
+              <td><?php echo $donnees['auteur']; ?></td>
+              <td><?php echo $donnees['genre']; ?></td> <br>
             </tr>
-          </thead>
 
-          <tr>
-              <?php foreach ($liste as $donnees) { ?>
-            <td><?php echo $donnees['titre']; ?></td>
-            <td><?php echo $donnees['auteur']; ?></td>
-            <td><?php echo $donnees['genre']; ?></td> <br>
-          </tr>
-
-          <?php
-          }
-          ?>
-          
-        </table>
-      </tbody>
+            <?php
+            }
+            ?>
+            
+          </table>
+        </tbody>
+      </div>
     </div>
   </body>
 </html>
