@@ -37,7 +37,7 @@ session_start();
 
     
       <form action="ajout_livres.php" style="margin-top:5%;" method="post">
-        <div class="container" style="padding:3%;background-color:rgba(206, 192, 51, 0.44);">
+        <div class="container" style="padding:3%;padding-left:12%;background-color:rgba(206, 192, 51, 0.44);">
           <div style="margin-left:4%;">
             <label class="input_form">
               <div>Titre</div>
@@ -89,7 +89,7 @@ session_start();
             </div>
           </div>
 
-          <button class="valider_bouton" style="margin-left:40%;" type="submit">Envoyer</button>
+          <button class="valider_bouton" style="margin-left:35%;" type="submit">Envoyer</button>
         </div>        
       </form>
      

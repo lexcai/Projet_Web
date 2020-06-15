@@ -18,6 +18,7 @@ include_once('bdd.php');
 ?>
 
 <!DOCTYPE html>
+<!-- Home - Undertale -->
 <html>
    <head>
       <meta charset="utf-8">
