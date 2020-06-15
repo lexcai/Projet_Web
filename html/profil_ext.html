@@ -62,8 +62,99 @@
                 livres en cours (lien vers page reading.html)
                  -->
             </div>
-        </div>
 
-        
+            <div class="container-fluid footer">
+                <div class="row" style="width:80%;margin-left:10%;">
+                    <div class="col-4" name="us_col" style="padding-left:3%;">
+                        <div style="margin-left:30%;margin-bottom:0%;">
+                            <img class='logo' style="height:135px;width:135px;" src="../logo/logo_lighter.png" alt="BookClub logo"/>
+                        </div>
+                        
+                        <p class="footer_text" style="font-size:medium;text-align:center;"style="font-size:medium">
+                        Répertoriez vos livres préférés
+                        </br>Et partagez votre avis.</p>
+                    </div> 
+
+                    <div class="col-4" name="pages_col" style="padding:0;border:1px solid #4d3c20;border-top:none;border-bottom:none;">
+                        <p class="footer_text" style="margin-top:15%;">Visitez nos pages</p>
+                        
+                        <ul style="padding-left:0;margin-bottom:5%;margin-top:8%;">
+                            <li class="footer_li">
+                                <a href="../php/home.php" class="footer_links">Accueil</a>
+                            </li>
+                                
+                            <li class="footer_li">
+                                <a href="../html/about_us.html" class="footer_links">A propos</a>
+                            </li>
+                                
+                            <li class="footer_li">
+                                <a href="../html/community.html" class="footer_links">Communauté</a>
+                            </li>
+                                
+                            <?php if (isset($_SESSION['IS_CONNECTED'])) {?>
+                            <li class="footer_li">
+                                <a href="../php/profil.php" class="footer_links">Profil</a>
+                            </li>
+                            <?php }?>
+
+                            <li class="footer_li">
+                                <a href="../html/form_recherche.html" class="footer_links">Rechercher un livre</a>
+                            </li>
+
+                            <li class="footer_li">
+                                <a href="../html/message.html" class="footer_links">Messages</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4" name="contact_col" style="padding-left:3%;">
+                        <p class="footer_text" style="margin-top:17%;">Contact</p>
+                        
+                        <ul style="padding-left:0;margin-bottom:5%;margin-top:10%;">
+                            <li class="footer_li" style="margin:2%;">
+                                <div class="row">
+                                    <div class="col-3">
+                                    <div style="padding-left:70%;">
+                                        <img style="height:25px;width:25px;" src="../icons/phone.png" alt="telephone number"/>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-9 footer_text" style="font-size:medium;text-align:left;padding-left:5%;">
+                                    (+33)06.47.20.69.01
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="footer_li" style="margin:3%;">
+                                <div class="row">
+                                    <div class="col-3">
+                                    <div style="padding-left:70%;padding-top:2%;">
+                                        <img style="height:25px;width:25px;" src="../icons/email.png" alt="email"/>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-9 footer_text" style="font-size:medium;text-align:left;padding-left:5%;">
+                                    axel.boudeau@ynov.com
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="footer_li" style="margin:2%;">
+                                <div class="row">
+                                    <div class="col-3">
+                                    <div style="padding-left:70%;padding-top:5%;">
+                                        <img style="height:25px;width:25px;" src="../icons/adresse.png" alt="address"/> 
+                                    </div>
+                                    </div>
+                                    <div class="col-9 footer_text" style="font-size:medium;text-align:left;padding-left:5%;">
+                                    89 quai des Chartrons, 33300 Bordeaux, France.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
    </body>
 </html>

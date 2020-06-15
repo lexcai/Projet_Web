@@ -251,7 +251,7 @@ include_once('bdd.php');
          <?php } ?>
       </div>
       
-      <div class="container-fluid footer" style="padding:0;padding-top:2%;padding-bottom:2%;">
+      <div class="container-fluid footer">
          <div class="row" style="width:80%;margin-left:10%;">
             <div class="col-4" name="us_col" style="padding-left:3%;">
                <div style="margin-left:30%;margin-bottom:0%;">
