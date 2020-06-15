@@ -42,12 +42,10 @@ include_once('bdd.php');
 
         <!-- css -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-                    
+        <link rel="stylesheet" href="../css/style.css">       
    </head>
    
    <body>
-
         <div class='body_box'>
             <!-- la barre de navigation responsive avec Bootstrap -->
             <nav class="navbar fixed_top navbar-expand-sm nav_bar_style">
@@ -57,28 +55,34 @@ include_once('bdd.php');
                 <!-- liens, celui de la page actuelle est désactivé -->
                 <ul class="navbar-nav links_position">
                     <li class="nav-item">
-                        <a class="nav-link link_enable " href="home.php">Page d'accueil</a>
+                        <a class="nav-link link_enable" href="../php/home.php">| Accueil</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="../html/about_us.html">A propos</a>
+                        <a class="nav-link link_enable" href="../html/about_us.html">| A propos</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="../html/community.html">Communauté</a>
+                        <a class="nav-link link_enable" href="../html/community.html">| Communauté</a>
                     </li>
+
+                    <!-- php ici si utilisateur connecté alors redirection vers page profil.php sinon redirection vers page index.html -->
+                    <?php if (isset($_SESSION['IS_CONNECTED'])) {?>
                     <li class="nav-item">
-                        <a class="nav-link disabled link_disable">Profil</a>
-                    </li>  
+                        <a class="nav-link disabled link_disable" href="profil.php">| Profil</a>
+                    </li> 
+                    <?php }?>  
+                    
+                    <li class="nav-item">
+                        <a class="nav-link link_enable" href="../html/form_recherche.html">| Rechercher un livre</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link link_enable" href="../html/message.html">| Messages</a>
+                    </li>               
                 </ul>
-
-                <div class="form-group row">
-                    <div class="col-xs-2 input_search_box">
-                        <label for="search"></label>
-                        <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
-                    </div>
-                </div>
-
-                <a href="../html/research.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
+     
 
 
             <!-- contenu de la page dans la div content divisée en grilles avec Bootstrap -->
@@ -102,7 +106,7 @@ include_once('bdd.php');
                 <div class="row">                    
                     <!--bloc gauche profil utilisateur -->
                     <div class="col-md-3 col-lg-3 col-xl-3">
-                        <div class="col-md-12" style="background-color:rgba(206, 116, 51, 0.11);padding-top:30px;padding-bottom:30px;"> 
+                        <div class="col-md-12" style="background-color:rgba(149, 91, 49, 0.06);padding-top:30px;padding-bottom:30px;"> 
                             <div class="pic_parent" style="margin-top:2px;">
                             <?php if (isset($_SESSION['IS_CONNECTED'])) {
                                     if ($_SESSION['table']  == 'membres') { ?>
@@ -188,7 +192,7 @@ include_once('bdd.php');
 
                     <!-- bloc droit stats -->
                     <div class="col-md-9 col-lg-9 col-xl-9">
-                        <div class="col-md-12" style="background-color:rgba(206, 116, 51, 0.11);padding:30px;"> 
+                        <div class="col-md-12" style="background-color:rgba(149, 91, 49, 0.06);padding:30px;"> 
                             <div class="container" style="padding-top:2px;">
                                 <form style="float:right;width:min-content;display:inline;" action="deconnexion.php" method="post">
                                     <button class="bouton_style deconnexion" type="submit">Deconnexion</button>

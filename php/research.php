@@ -61,36 +61,40 @@ $liste = $query1->fetchAll();
             <!-- la barre de navigation responsive avec Bootstrap -->
             <nav class="navbar fixed_top navbar-expand-sm nav_bar_style">
                 <!-- Logo en haut à gauche -->
-                <a href="../html/index.html"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
+                <a href="../php/home.php"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
                 
                 <!-- liens, celui de la page actuelle est désactivé -->
                 <ul class="navbar-nav links_position">
                     <li class="nav-item">
-                        <a class="nav-link link_enable " href="../php/home.php">Page d'accueil</a>
+                        <a class="nav-link link_enable" href="../php/home.php">| Accueil</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="about_us.html">A propos</a>
+                        <a class="nav-link link_enable" href="../html/about_us.html">| A propos</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="community.html">Communauté</a>
+                        <a class="nav-link link_enable" href="../html/community.html">| Communauté</a>
                     </li>
+
+                    <!-- php ici si utilisateur connecté alors redirection vers page profil.php sinon redirection vers page index.html -->
+                    <?php if (isset($_SESSION['IS_CONNECTED'])) {?>
                     <li class="nav-item">
-                        <a class="nav-link link_enable" href="../php/profil.php">Profil</a>
-                    </li>  
+                        <a class="nav-link link_enable" href="profil.php">| Profil</a>
+                    </li> 
+                    <?php }?>  
+                    
+                    <li class="nav-item">
+                        <a class="nav-link link_enable" href="../html/form_recherche.html">| Rechercher un livre</a>            
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link link_enable" href="../html/message.html">| Messages</a>                
+                    </li>               
                 </ul>
-
-                <div class="form-group row">
-                    <div class="col-xs-2 input_search_box">
-                    <label for="search"></label>
-                        <input class="form-control input_search_style" type="text" placeholder="trouvez un livre..." required />
-                    </div>
-                </div>
-
-                <a href="../html/form_recherche.html" style="margin-left:1%;"><button class="bouton_style valider_bouton" type="submit">Rechercher</button></a>
             </nav>
 
-            <div class="container content" style="height:1500px;"> 
-
+            <div class="container content" style="height:1500px;">
                 <script>
                     function error() {
                         document.getElementById('error_div').style.display = "block";

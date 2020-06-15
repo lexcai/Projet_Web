@@ -56,13 +56,13 @@ body, html {
 .link_disable{
   letter-spacing: 1px;
   text-align: left;
-  font-size: medium;
+  font-size: 17px;
 }
 .link_enable{
   color: rgb(245, 253, 180);
   letter-spacing: 1px;
   text-align: left;
-  font-size: medium;
+  font-size: 17px;
 }
 .link_enable:hover{
   color: rgb(128, 134, 90);
@@ -124,7 +124,7 @@ body, html {
 .content_box_home{
   margin-top: 10%;
   width: 80%;
-  background-color: rgba(213, 164, 102, 0.17);
+  background-color: rgba(213, 164, 102, 0.31);
   border: 2px solid rgba(123, 94, 56, 0.03);
 }
 
@@ -133,14 +133,13 @@ body, html {
   margin-top: 10%;
   height: auto;
   width: 80%;
-  background-color:rgba(213, 164, 102, 0.17);
+  background-color:rgba(213, 164, 102, 0.31);
   border:2px solid rgba(123, 94, 56, 0.03);
 }
 
 hr{
   border: none;
-  border-top: 3px double rgba(145, 141, 66, 0.77);
-  color: rgba(145, 141, 66, 0.77);
+  border-top: 3px double rgba(145, 107, 66, 0.77);
   overflow: visible;
   text-align: center;
   height: 5px;
@@ -149,7 +148,7 @@ h1{
   margin: 3%;
   letter-spacing: 3px;
   font-size: 35px;
-  color: rgb(85, 76, 25);
+  color: rgb(77, 57, 9);
   text-align: center;
 }
 h2{
@@ -428,3 +427,10 @@ input#file{
   margin: 3px;
   margin-top: 2%;
 }
+
+.footer{
+  padding-top: 2%;
+  margin-top: 10%;
+  background-color: #4424089e;
+}
+

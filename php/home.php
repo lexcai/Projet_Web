@@ -44,39 +44,32 @@ include_once('bdd.php');
             <!-- liens, celui de la page actuelle est désactivé -->
             <ul class="navbar-nav links_position">
                <li class="nav-item">
-                  <a class="nav-link disabled link_disable">Page d'accueil</a>
+                  <a class="nav-link disabled link_disable" href="../php/home.php">| Accueil</a>
                </li>
+
                <li class="nav-item">
-                  <a class="nav-link link_enable" href="../html/about_us.html">A propos</a>
+                  <a class="nav-link link_enable" href="../html/about_us.html">| A propos</a>
                </li>
+
                <li class="nav-item">
-                  <a class="nav-link link_enable" href="../html/community.html">Communauté</a>
+                  <a class="nav-link link_enable" href="../html/community.html">| Communauté</a>
                </li>
 
                <!-- php ici si utilisateur connecté alors redirection vers page profil.php sinon redirection vers page index.html -->
                <?php if (isset($_SESSION['IS_CONNECTED'])) {?>
                <li class="nav-item">
-                  <a class="nav-link link_enable" href="profil.php">Profil</a>
+                  <a class="nav-link link_enable" href="profil.php">| Profil</a>
                </li> 
-               <?php }?>
-
+               <?php }?>  
+               
                <li class="nav-item">
-                  <a class="nav-link link_enable" href="../html/message.html"><img class='notif' src="../icons/" alt="notifications" /></a>
-            
-               </li>  
+                  <a class="nav-link link_enable" href="../html/form_recherche.html">| Rechercher un livre</a>         
+               </li>
+               
+               <li class="nav-item">
+                  <a class="nav-link link_enable" href="../html/message.html">| Messages</a>            
+               </li>               
             </ul>
-
-            <!-- php ici
-            barre de recherche simple (titre ou auteur), bouton 'rechercher' 
-            envoie formulaire recherche dans la BDD, recherche par mot clé et redirection vers 
-            page research.html avec résultats de la recherche (affiche nombre de résultats)
-            si aucun mot clé rentré; nombre de résultat = 0 -->
-            <div class="form-group row">
-               <div class="col-xs-2 input_search_box">
-                 <label for="search"></label>
-               </div>
-               </div>
-               <a href="../html/form_recherche.html"> <button class="bouton_style valider_bouton" type="submit" style="margin-left:1%;">Rechercher</button></a>
          </nav>
 
          <!-- Message de bienvenue -->
@@ -107,8 +100,7 @@ include_once('bdd.php');
 
 
       <!-- le container de la page avec tous les éléments de la page -->
-      <div class="container content_box_home"> 
-
+      <div class="container content_box_home">
          <div name="title" style="padding-top:20px;">
             <hr>
             <h1>Nos livres séléctionnés rien que pour vous</h1>
@@ -256,19 +248,21 @@ include_once('bdd.php');
                </a> 
          </div>
 
-         
          <?php } ?>
-
-         
       </div>
       
+      <div class="container-fluid footer" style="height:300px;padding:0;padding-top:5%;">
+         <div class="row" style="width:80%;margin-left:10%;">
+            <div class="col-4" name="us_col" style="background-color:pink;height:100px;padding-left:5%;">
+            </div> 
 
+            <div class="col-4" name="pages_col" style="background-color:green;height:100px;padding-left:5%;">
+            </div> 
 
-   
-
-
-
-
+            <div class="col-4" name="contact_col" style="background-color:yellow;height:100px;padding-left:5%;">
+            </div> 
+         </div>
+      </div>
 
    </body>
 </html>
