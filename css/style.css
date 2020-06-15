@@ -149,14 +149,14 @@ h1{
   margin: 3%;
   letter-spacing: 3px;
   font-size: 35px;
-  color: rgb(3, 54, 4);
+  color: rgb(85, 76, 25);
   text-align: center;
 }
 h2{
   margin: 3%;
   letter-spacing: 3px;
   font-size: 26px;
-  color: rgb(3, 54, 4);
+  color: rgb(100, 54, 6);
   text-align: center;
 }
 h3{
@@ -165,16 +165,9 @@ h3{
 }
 h4{
   font-size:16px;
-  color: rgb(36, 35, 10);
+  color: rgb(60, 29, 1);
 }
 
-.statut_title{
-  margin: 3%;
-  letter-spacing: 3px;
-  font-size: 23px;
-  color: rgb(3, 54, 4);
-  text-align: center;
-}
 
 .selection{
   height: 200px;
@@ -305,7 +298,7 @@ input#file{
 
 .book_statut{
   text-align:center;
-  border-right: solid 1px gray;
+  border-right: solid 1px rgb(125, 93, 17);
 }
 
 .show_pic{
@@ -319,7 +312,7 @@ input#file{
 .more{
   text-decoration: none;
   margin-left: 60%;
-  color: rgb(4, 54, 4);
+  color: rgb(54, 51, 4);
 }
 .more:hover{
   text-decoration: none;

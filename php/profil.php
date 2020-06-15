@@ -82,7 +82,7 @@ include_once('bdd.php');
 
 
             <!-- contenu de la page dans la div content divisée en grilles avec Bootstrap -->
-            <div class="container content"  style="background-color:yellow"> 
+            <div class="container content"  style="padding-left:4%;padding-right:5%;"> 
                 <script>
                         function showDiv() {
                             document.getElementById('new_pic').style.display = "block";
@@ -99,11 +99,10 @@ include_once('bdd.php');
                 </script>
             
 
-                <div class="row">      
-                    
+                <div class="row">                    
                     <!--bloc gauche profil utilisateur -->
                     <div class="col-md-3 col-lg-3 col-xl-3">
-                        <div class="col-md-12" style="background-color:coral;padding-top:30px;padding-bottom:30px;"> 
+                        <div class="col-md-12" style="background-color:rgba(206, 116, 51, 0.11);padding-top:30px;padding-bottom:30px;"> 
                             <div class="pic_parent" style="margin-top:2px;">
                             <?php if (isset($_SESSION['IS_CONNECTED'])) {
                                     if ($_SESSION['table']  == 'membres') { ?>
@@ -189,7 +188,7 @@ include_once('bdd.php');
 
                     <!-- bloc droit stats -->
                     <div class="col-md-9 col-lg-9 col-xl-9">
-                        <div class="col-md-12" style="background-color:coral;padding:30px;"> 
+                        <div class="col-md-12" style="background-color:rgba(206, 116, 51, 0.11);padding:30px;"> 
                             <div class="container" style="padding-top:2px;">
                                 <form style="float:right;width:min-content;display:inline;" action="deconnexion.php" method="post">
                                     <button class="bouton_style deconnexion" type="submit">Deconnexion</button>
@@ -218,7 +217,6 @@ include_once('bdd.php');
                                     </div>
                                 </div> 
 
-                                <--!nombre de livres total en php-->
                                 <div class="container">
                                     <div class="d-inline">Total livres enregistrés:</div>
                                     <div class="d-inline" style="float:center;">PHP number</div>
@@ -230,7 +228,7 @@ include_once('bdd.php');
 
                                 <div class="row" style="margin-top:10%;">
                                     <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                        <h3 class="statut_title">Livres lus</h3>
+                                        <h3>Livres lus</h3>
                                         <div class="container" style="margin-top:75px"> 
                                             <div class="d-inline" style="margin-right:60px;">Total</div>
                                             <div class="d-inline">PHP</div>
@@ -265,7 +263,7 @@ include_once('bdd.php');
                                     </div>
 
                                     <div class="col-md-4 col-lg-4 col-xl-4 book_statut">
-                                        <h3 class="statut_title">Livres en cours de lecture</h3>
+                                        <h3>Livres en cours de lecture</h3>
                                         <div class="container" style="margin-top:48px;">
                                             <div class="d-inline" style="margin-right:60px;">Total</div>
                                             <div class="d-inline">PHP</div>
@@ -300,7 +298,7 @@ include_once('bdd.php');
                                     </div>
                                         
                                     <div class="col-md-4 col-lg-4 col-xl-4" style="text-align:center;">
-                                        <h3 class="statut_title">Livres à lire</h3>
+                                        <h3>Livres à lire</h3>
                                         <div class="container" style="margin-top:75px">
                                             <div class="d-inline" style="margin-right:60px;">Total</div>
                                             <div class="d-inline">PHP</div>
