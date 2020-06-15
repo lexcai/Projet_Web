@@ -431,6 +431,28 @@ input#file{
 .footer{
   padding-top: 2%;
   margin-top: 10%;
-  background-color: #4424089e;
+  background-color: #442408c9;
+}
+
+.footer_text{
+  letter-spacing:2px;
+  font-size:20px;
+  color:rgb(245, 253, 180);
+  text-align:center;
+}
+
+.footer_li{
+  list-style:none;
+  text-align:center;
+}
+
+.footer_links{
+  letter-spacing:2px;
+  font-size:medium;
+  color:rgb(245, 253, 180);
+}
+.footer_links:hover{
+  color: black;
+  text-decoration: none;
 }
 
