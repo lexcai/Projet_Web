@@ -30,6 +30,8 @@ session_start();
 
       <h1 class="title_page2">Partagez un nouveau livre</h1>
 
+      <h2 class="subtitle">- Espace Administrateurs -</h2>
+
       <div class="text" style="padding:5%;padding-bottom:0;">
         <p>Vous connaissez ce livre par coeur?
         </br>Aidez-nous en remplissant ce formulaire!</p>

@@ -110,6 +110,14 @@
   border:1px solid rgba(102, 84, 16, 0.78);
   border-right:none;border-left:none;
 }
+.subtitle{
+  letter-spacing: 2px;
+  width: fit-content;
+  text-align: center;
+  font-size: 22px;
+  color:rgb(58, 49, 11);
+  padding:15px;
+}
 
 .input_connexion {
   display: block;

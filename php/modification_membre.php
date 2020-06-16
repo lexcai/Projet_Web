@@ -32,33 +32,52 @@ foreach ($liste_membres as $membres) {
          <div class="title_page">Modifier vos données</div>
          
          <form method="POST" action="modif_donnees_membre.php">
-                  
-            <label for="pseudo" class="input_inscription">
-               <div>Nom utilisateur</div>
-               <input name="pseudo" type="text" value="<?php echo"$pseudo"?>"required/>
-            </label>
-
-            <label for="mail" class="input_inscription">
-               <div>Adresse Email</div>
-               <input name="mail" type="email" value="<?php echo"$mail"?>"required/>
-            </label>
-
-            <label for="pays" class="input_inscription">
-               <div>Pays</div>
-               <input name="pays" type="text" value="<?php echo"$pays"?>"required/>
-            </label>
-
-            <label for="age" class="input_inscription">
-               <div>Votre âge</div>
-               <input class="age" name="age" type="number" value="<?php echo"$age"?>" required/>
-            </label>
-
-            <label for="bio" class="input_inscription">
-               <div>Votre bio</div>
-               <textarea class="bio" name="bio" type="text" value="<?php echo"$bio"?>" required></textarea>
-            </label>
-
             
+            <div class="row">
+               <div class="col-6">
+                  <label for="pseudo" class="input_inscription">
+                     <div>Nom utilisateur</div>
+                     <input name="pseudo" type="text" value="<?php echo"$pseudo"?>"required/>
+                  </label>
+               </div>
+
+               <div class="col-6">
+                  <label for="mail" class="input_inscription">
+                     <div>Adresse Email</div>
+                     <input name="mail" type="email" value="<?php echo"$mail"?>"required/>
+                  </label>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-6">
+                  <label for="pays" class="input_inscription">
+                     <div>Pays</div>
+                     <input name="pays" type="text" value="<?php echo"$pays"?>"required/>
+                  </label>
+               </div>
+
+               <div class="col-6" style="padding-left:0;">
+                  <label for="age" class="input_inscription">
+                     <div style="padding-left:7%;">Votre âge</div>
+                     <input class="age" name="age" type="number" value="<?php echo"$age"?>" required/>
+                  </label>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-2"></div>
+
+               <div class="col-8" style="padding-left:10%;">
+                  <label for="bio" class="input_inscription">
+                     <div>Votre bio</div>
+                     <textarea class="bio" name="bio" type="text" value="<?php echo"$bio"?>" required></textarea>
+                  </label>
+               </div>
+
+               <div class="col-2"></div>
+            </div>
+
             <div class=div_buttons>
                <input class="inscription_boutons" type="button" name="home" value="Retour" onclick="self.location.href='./profil.php'">
                <input class="inscription_boutons" type="submit" name="inscription_membre"/>

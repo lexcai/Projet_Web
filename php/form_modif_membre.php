@@ -32,6 +32,8 @@
 
                 <button class="bouton_retour" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/php/moderation_membres.php';">Retour</button>
 
+                <h2 class="subtitle">- Espace Administrateurs -</h2>
+                
                 <div class="text" style="padding:5%;text-align:center;font-size:25px;border:1px solid;border-left:none;border-right:none;">
                 Quel doit être le rôle de <?php echo $pseudo ?>?
                 </div>

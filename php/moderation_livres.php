@@ -27,6 +27,8 @@ session_start();
 
       <h1 class="title_page2">Modération de la bibliothèque</h1>
 
+      <h2 class="subtitle">- Espace Administrateurs -</h2>
+
       <div class="text" style="padding:5%;padding-bottom:0;font-size:23px;">
         <p>Gérons ensemble la bibliothèque de livres</p>
       </div> 

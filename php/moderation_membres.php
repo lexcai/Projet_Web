@@ -27,6 +27,8 @@ session_start();
       <button class="bouton_retour" onclick="window.location.href = 'http://localhost:8080/TP/Projet_Web/php/home.php';">Retour</button>
 
       <h1 class="title_page2">Modération des utilisateurs</h1>
+      
+      <h2 class="subtitle">- Espace Administrateurs -</h2>
 
       <div class="text" style="padding:5%;padding-bottom:0;font-size:23px;">
         <p>Modérez les lecteurs de BookClub</p>
