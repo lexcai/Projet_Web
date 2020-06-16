@@ -16,37 +16,53 @@
          <div class="title_page">Inscrivez-vous</div>
          
          <form style="margin-left:4%;" method="POST" action="creation_membre.php">
-                  
-            <label for="pseudo" style="" class="input_form">
-               <div>Nom utilisateur</div>
-               <input name="pseudo" type="text" required/>
-            </label>
+            <div class="row">
+               <div class="col-6">
+                  <label for="pseudo" style="" class="input_form">
+                     <div>Nom utilisateur</div>
+                     <input name="pseudo" type="text" required/>
+                  </label>
+               </div>
 
-            <label for="mail" style="" class="input_form">
-               <div>Adresse Email</div>
-               <input name="mail" type="text" required/>
-            </label>
+               <div class="col-6">
+                  <label for="mail" style="" class="input_form">
+                     <div>Adresse Email</div>
+                     <input name="mail" type="text" required/>
+                  </label>
+               </div>
+            </div>
 
-            <label for="mdp" style="" class="input_form">
-               <div>Mot de passe</div>
-               <input name="mdp" type="text" required/>
-            </label>
+            <div class="row">
+               <div class="col-6">
+                  <label for="mdp" style="" class="input_form">
+                     <div>Mot de passe</div>
+                     <input name="mdp" type="text" required/>
+                  </label>
+               </div>
 
-            <label for="pays" style="" class="input_form">
-               <div>Pays</div>
-               <input name="pays" type="text" required/>
-            </label>
+               <div class="col-6">
+                  <label for="pays" style="" class="input_form">
+                     <div>Pays</div>
+                     <input name="pays" type="text" required/>
+                  </label>
+               </div>
+            </div>
 
-            <label for="sexe" style="" class="input_form">
-               <input name="sex" type="radio" value="H"> Homme <input type="radio" name="sex" value="F"> Femme
-            </label>
+            <div class="row">
+               <div class="col-6" style="padding-top:5%;">
+                  <label for="sexe" style="" class="input_form">
+                     <input name="sex" type="radio" value="H"> Homme <input type="radio" name="sex" value="F"> Femme
+                  </label>
+               </div>
 
-            <label for="age" style="margin-left:5px;" class="input_form">
-               <div>Votre âge</div>
-               <input class="age" name="age" type="text" required/>
-            </label>
+               <div class="col-6" style="padding-left:0;">
+                  <label for="age" class="input_form">
+                     <div>Votre âge</div>
+                     <input class="age" name="age" type="text" required/>
+                  </label>
+               </div>
+            </div>
 
-            
             <div class=div_buttons>
                <input class="inscription_boutons" type="button" name="home" value="Retour" onclick="self.location.href='../html/index.html'">
                <input class="inscription_boutons" type="submit" name="inscription_membre"/>
