@@ -91,9 +91,9 @@ include_once('bdd.php');
                      
          ?>
          <div id="admliens">
-            <button><a href="./moderation_livres.php">Moderation livres</a></button>
-            <button><a href="./moderation_membres.php">Moderation membres</a></button>
-            <button><a href="./form_ajout_livres.php">Ajout de livres</a></button>
+            <a href="./moderation_livres.php"><button>Moderation livres</button></a>
+            <a href="./moderation_membres.php"><button>Moderation membres</button></a>
+            <a href="./form_ajout_livres.php"><button>Ajout de livres</button></a>
          </div>
          <?php }
                }
