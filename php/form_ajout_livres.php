@@ -37,22 +37,28 @@ session_start();
 
     
       <form action="ajout_livres.php" style="margin-top:5%;" method="post">
-        <div class="container" style="padding:3%;padding-left:12%;background-color:rgba(206, 192, 51, 0.44);">
-          <div style="margin-left:4%;">
-            <label class="input_form">
-              <div>Titre</div>
-              <input type="text" name="titre" required/> 
-            </label>
+        <div class="container" style="padding:3%;padding-left:3%;background-color:rgba(206, 192, 51, 0.44);">
+          <div class="row">
+            <div class="col-4">
+              <label class="input_form">
+                <div>Titre</div>
+                <input type="text" name="titre" required/> 
+              </label>
+            </div>
 
-            <label class="input_form">
-              <div>Auteur</div>
-              <input type="text" name="auteur" required/>
-            </label>
-            
-            <label class="input_form">
-              <div>Éditeur</div>
-              <input type="editeur" name="editeur" required/> 
-            </label>
+            <div class="col-4">
+              <label class="input_form">
+                <div>Auteur</div>
+                <input type="text" name="auteur" required/>
+              </label>
+            </div>
+
+            <div class="col-4">
+              <label class="input_form">
+                <div>Éditeur</div>
+                <input type="editeur" name="editeur" required/> 
+              </label>
+            </div>
           </div>
 
           <div style="margin-left:4%;">

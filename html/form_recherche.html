@@ -1,4 +1,4 @@
-*
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,42 +12,59 @@
    <body class="container-fluid windows">
       <div class="container content">
 
-         <a href="../php/home.php"><img class='logo' style="padding-left:22%;"src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
+         <a href="../php/home.php"><img class='logo' style="padding-left:30%;"src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
                
          <div class="title_page">Rechercher un livre</div>
          
          <form method="POST" action="../php/research.php">
-                  
-            <label for="titre" style="padding-left:10%;" class="input_inscription">
-               <div>Titre</div>
-               <input name="titre" type="text"/>
-            </label>
+            <div class="row">
+               <div class="col-6">
+                  <label for="titre" style="padding-left:3%;" class="input_inscription">
+                     <div>Titre</div>
+                     <input name="titre" type="text"/>
+                  </label>
+               </div>
 
-            <label for="auteur" style="padding-left:10%;" class="input_inscription">
-               <div>Auteur</div>
-               <input name="auteur" type="text" />
-            </label>
+               <div class="col-6">
+                  <label for="auteur" style="padding-left:3%;" class="input_inscription">
+                     <div>Auteur</div>
+                     <input name="auteur" type="text" />
+                  </label>
+               </div>
+            </div>
 
-            <label for="genre" style="padding-left:10%;" class="input_inscription">
-               <div>Genre</div>
-               <input name="genre" type="text" />
-            </label>
+            <div class="row">
+               <div class="col-6">
+                  <label for="genre" style="padding-left:3%;" class="input_inscription">
+                     <div>Genre</div>
+                     <input name="genre" type="text" />
+                  </label>
+               </div>
 
-            <label for="editeur" style="padding-left:10%;" class="input_inscription">
-               <div>Editeur</div>
-               <input name="editeur" type="text"/>
-            </label> <br>
+               <div class="col-6">
+                  <label for="editeur" style="padding-left:3%;" class="input_inscription">
+                     <div>Editeur</div>
+                     <input name="editeur" type="text"/>
+                  </label>
+               </div>
+            </div>
 
-            <label for="note_min" style="padding-left:10%;" class="input_inscription">
-               <div>Note Minimum</div>
-               <input name="note_min" type="number" min="0" max="5" />
-            </label>
+            <div class="row">
+               <div class="col-6">
+                  <label for="note_min" style="padding-left:3%;" class="input_inscription">
+                     <div>Note Minimum</div>
+                     <input name="note_min" type="number" min="0" max="5" />
+                  </label>
+               </div>
 
-            <label for="note_max" style="padding-left:10%;" class="input_inscription">
-               <div>Note Maximum</div>
-               <input name="note_max" type="number" min="0" max="5" />
-            </label>
-            
+               <div class="col-6">
+                  <label for="note_max" style="padding-left:3%;" class="input_inscription">
+                     <div>Note Maximum</div>
+                     <input name="note_max" type="number" min="0" max="5" />
+                  </label>
+               </div>
+            </div>
+
             <div class=div_buttons>
                <input class="inscription_boutons" type="button" name="home" value="Retour" onclick="self.location.href='../php/home.php'">
                <input class="inscription_boutons" type="submit" name="recherche_livres"/>
