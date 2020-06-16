@@ -1,4 +1,4 @@
-PROJECT: Bibliothèque de livres en ligne
+PROJET: Bibliothèque de livres en ligne
 Equipe de choc:
  - BOUDEAU Axel
  - BOILEAU Marius 
@@ -6,44 +6,37 @@ Equipe de choc:
 
   
 
-Le but de ce site est de permettre à un utilisateur de répertorier des livres qu'il lit, a lu ou prévois de lire dans une bibliothèque en ligne.
-Il pourra rechercher dans notre site un livre en tapant son titre, son auteur ou son genre et l'ajouter dans sa bibliothèque.
+Le but de ce site est de permettre à un utilisateur de répertorier des livres qu'il lit, a lu ou prévoit de lire dans une bibliothèque en ligne.
+Il pourra rechercher sur notre site un livre en tapant son titre, son auteur ou son genre et l'ajouter dans sa bibliothèque.
 
-L'utilisateur a la possibilité de noter et d'ajouter un commentaire pertinent à l’œuvre et en faire profiter à la communauté du site.
+L'utilisateur a la possibilité de noter et d'ajouter un commentaire pertinant à l’œuvre et en faire profiter à la communauté du site.
 En fonction des livres enregistrés dans la bibliothèque de l'utilisateur, un algorithme pourra lui suggérer des livres qui lui correspondent, se basant sur le genre prisé par le lecteur ou par les autres œuvres d'un auteur apprécié. 
 
-L'utilisateur peut également contribuer au développement de la bibliothèque du site internet en nous proposant des œuvres non répertoriées en nous envoyant un message que nous traiterons (soit manuellement, soit par un programme qui cherchera si l’œuvre existe). Après un certain nombre de contributions, l'utilisateur pourra obtenir un rang de modérateur, ou un titre spécial. 
-De même pour les commentaires pertinents sur les œuvres.
+L'utilisateur peut également contribuer au développement de la bibliothèque du site internet en nous proposant des œuvres non répertoriées en nous envoyant un message que nous traiterons. Après un certain nombre de contributions, l'utilisateur pourra obtenir un rang d'administrateur (Super-Membre).De même pour les commentaires pertinants sur les œuvres.
 
   
-
 Le site se composerait de 7 pages: 
 (enfaite on est à 14 pages haha.. )
+(update... 21 T^T)
 
 
-![](https://cdn.discordapp.com/attachments/707230681029279768/712721908134838312/sweat.png)
-
-
-update... 26! T^T
-
-
- 1. page d'entrée
- 2. page connexion
- 3. page inscription
+ 1. page d'entrée (index.html)
+ 2. page connexion 
+ 3.page mot de passe oubli
+ 4. page inscription
 
 ***********************************************
 
- 4. une page d’accueil, avec :
+ 5. une page d’accueil, avec :
  
-(entête)
- - logo à gauche
- - barre de recherches simple (titre ou auteur)  bouton catégorie
-   (optionnel indiquer genre) renvoie vers page résultats de recherche
- - la possibilité de se connecter/s'inscrire si ce n'est pas fait ou d’accéder à son profile,
- - un bouton pour accéder à la page des nouveautés et actus
+    (entête)
+ - logo à gauche qui renvoie vers la page d'accueil
+ - la possibilité de se connecter/s'inscrire si ce n'est pas fait ou d’accéder à son profil,
  - un bouton pour accéder à la page 'communauté'
  - un bouton pour accéder à la page 'A propos' 
- - bouton pour retourner à la page d’accueil
+ - un bouton pour accéder au formulaire de recherche de livre
+ - bouton pour accéder à la page d’accueil
+ - un bouton pour accéder à la page 'messages' 
  
  ...
 
@@ -52,98 +45,162 @@ update... 26! T^T
  - sélection d’œuvres récemment ajoutées sur le site (avec nom du
    contributeur et date d'ajout) (6)
  - sélection d’œuvres les plus populaires (notation collective toutes œuvres confondues) (6)
- - pied de page avec contact, logo, lien vers page A propos
+
+    (footer)
+ - pied de page avec contact, logo, lien vers page
 
 ***********************************************
-5. page profil
+6. page profil
 
- - entête
-- information utilisateur (pseudo, photo, date création, dernière connexion)
-- bio
-- stats livres lus, livres que je lis, livres que je prévois de lire (barre pourcentage en fonction total livres dans la bibliothèque)
+- entête
+- information utilisateur (pseudo, photo, date création, rôle)
+- biographie
+- statistiques livres lus, livres que je lis, livres que je prévois de lire 
+(barre pourcentage en fonction de la quantité totale de livres dans la bibliothèque)
 - derniers ajouts
-- commentaires
-- amis (lien vers page amis)
+-liens "voir plus" pour accéder aux pages livres lus, livres en cours de lecture et livres à lire.
+- footer
 
 ***********************************************
-6/ page livres lus
+7. page livres lus (inachevée)
 
 - entête
-- liste livres avec titre auteur (liens vers page œuvre)
+- liste livres avec titre et auteur (liens vers page du livre)
 - notation personnelle
 - supprimer le livre de la sélection
+- footer
 
 ***********************************************
-7/ livres en cours de lecture
+8. livres en cours de lecture (inachevée)
 
  - entête
-- liste livres avec titre auteur (liens vers page œuvre)
+- liste livres avec titre auteur (liens vers page du livre)
 - notation personnelle
 - supprimer le livre de la sélection
+- footer
 
 ***********************************************
 
-8/livres à lire
+9. livres à lire (inachevée)
 
 - entête
-- liste livres avec titre auteur (liens vers page œuvre)
+- liste livres avec titre auteur (liens vers page du livre)
 - notation personnelle
 - supprimer le livre de la sélection
-
-***********************************************
-9/ page amis
-
-- entête
-- liste amis; pseudo, image (lien vers page utilisateur)
-- envoyer mp bouton
-- supprimer de la liste bouton
+- footer
 
 ***********************************************
 
-10/ page communauté:
+10. bibliothèque personnelle (inachevée)
 
 - entête
-- affiche tous les utilisateurs qui se sont connectés récemment (6) (liens vers utilisateur)
-- nouveaux inscrits (6) (liens vers utilisateur)
-- permet de chercher un utilisateur (barre de recherche)
+- liste livres avec titre auteur (liens vers page du livre)
+- supprimer le livre de la sélection
+- footer
+
+***********************************************
+
+11. page livre
+
+- entête
+- titre auteur date publication résumé notation
+-lien vers page modération livre
+- footer
+
+***********************************************
+
+12. modération livres //admin//
+
+- suppression livre (indiquer titre)
+- modifier données d'un livre (lien vers page modification livre)
+
+***********************************************
+
+13. modification livre
+
+- formulaire modification livre (titre auteur genre editeur date parution note résumé)
+- bouton valider
+
+***********************************************
+
+14. page communauté:
+
+- entête
+- lecteurs aléatoire (6) (liens vers utilisateur)
+- permet de chercher un utilisateur avec pseudo(barre de recherche)
 - rechercher avec un filtre pays, age, genre...
-- (bouton pour accéder à sa page)
+- bouton pour accéder à la page d'un lecteur
+- footer
 
 ***********************************************
 
-11/ page user étranger
+15. profil lecteur
 
 - entête
-- statut
-- stats livres lu, à lire, en lecture (lien vers pages)
-- derniers ajouts (6)
-- (commentaires)
-- date création
-- dernière connexion
-- ajout ami (envoi demande ami)
-- envoyer mp
+- pseudo, image 
+- envoyer mp bouton
+- stats
+- footer
   
 ***********************************************
+16. modération utilisateur //admin//
 
-12/ page résultats de recherches:
- 
-- entête
-- recherche avancée filtre; genre, popularité, édition, auteur.
+- suppression du compte d'un utilsateur (renseigner pseudo)
+- modification rôle d'un utilisateur (lien vers page de modification de rôle)
 
 ***********************************************
 
-13/ page de l’œuvre
+17. modification rôle utlisateur
 
+- choix rôle
+- bouton valider
+
+***********************************************
+
+18. formulaire recherche livre
+
+- formulaire (titre auteur genre editeur notation)
+- bouton qui renvoie vers page résultats de recherche
+
+***********************************************
+
+19. page résultats de recherches:
+ 
 - entête
-- titre, auteur, résumé, photo, commentaires, notation commune
-- liste déroulante statut (lu, en lecture, à lire, non répertorié (défaut))
-- liste déroulante score personnel (notation sur 20)
+- si aucun résultat: div conseils pour nouvelle recherche + bouton qui renvoie vers formulaire ajout livre
+- si résultats: affichage livres avec photo titre auteur --> lien vers page livre (voir 11.)
+- footer 
 
-***********************************************  
+***********************************************
 
-14/ page A propos:
+20. page A propos (inachevée)
 
 - entête
 - présentation de notre site internet, objectifs, 
-- contacts.
+- structure site
+- contact
+- footer
 
+***********************************************
+
+21. messages (inachevée)
+
+- entête
+- même forme qu'un forum (rafraichir la page pour actualiser)
+- liens vers discussion
+- footer
+
+
+
+Ressources:
+
+- Langages: Php MySQL HTML CSS(+Bootstrap) JS
+- Logiciels/Services: Phpmyadmin, XAMPP, Virtual Studio Code, Google..., Trello, Github, Adobe XD, Discord, Teams
+- Matériels: Ordinateur
+- Personnels: BOUDEAU Axel (Php MySQL), BOILEAU Marius (Php JS), MEGY Ilyana (HTML CSS JS framework)
+
+Liens utiles:
+
+https://github.com/lexcai/Projet_Web
+https://trello.com/b/rb2t8qWA
+https://xd.adobe.com/view/b0d639be-e83c-4a2e-6b92-2a74b32aadef-c6e7/

@@ -2,10 +2,10 @@
 
 Le site se compose des pages, boutons et fonctionnalitées suivantes :
 
-- Accueil
+- Accueil (index.html)
 - Inscription
 - Connexion
-- Home
+- Home (home.php)
 - A propos
 - Communauté
 - Recherche avec filtres
@@ -15,10 +15,11 @@ Le site se compose des pages, boutons et fonctionnalitées suivantes :
 - Modification profil membre
 - Ajout photo membre
 - Deconnexion
-- Contenu Personalisé
+- Contenu Personnalisé
 - Page Root
 - Suppression Compte membre
 - Moderation membres
+- Modération livres
 - CRUD livres
 - Ajout livres
   
@@ -63,11 +64,12 @@ mdp =
 
 ## Tâches non fini:
 
-- Contenu personalisé en fonction des gout du membr(Home)
-- Systéme d'envoi de mail(connexion & Home)
-- Systéme de messagerie(Communauté)
-- Bibliothéque personel(Profil)
+- Contenu personalisé en fonction des gout du membre(Home)
+- Système d'envoi de mail(connexion & Home)
+- Système de messagerie(Communauté)
+- Bibliothéque personnelle(Profil)
 - Formulaire de requête d'ajout de livre(Home)
 - Ajout d'amis(Communauté)
 - Affichage des membres la communauté(Communauté)
-- 
+- Messages privés
+- Page à propos
