@@ -31,7 +31,7 @@ update... 26! T^T
  2. page connexion
  3. page inscription
 
-************************************
+***********************************************
 
  4. une page d’accueil, avec :
  
@@ -54,7 +54,7 @@ update... 26! T^T
  - sélection d’œuvres les plus populaires (notation collective toutes œuvres confondues) (6)
  - pied de page avec contact, logo, lien vers page A propos
 
-************************************
+***********************************************
 5. page profil
 
  - entête
@@ -65,7 +65,7 @@ update... 26! T^T
 - commentaires
 - amis (lien vers page amis)
 
-***********************************
+***********************************************
 6/ page livres lus
 
 - entête
@@ -73,7 +73,7 @@ update... 26! T^T
 - notation personnelle
 - supprimer le livre de la sélection
 
-***********************************
+***********************************************
 7/ livres en cours de lecture
 
  - entête
@@ -81,7 +81,8 @@ update... 26! T^T
 - notation personnelle
 - supprimer le livre de la sélection
 
-***********************************
+***********************************************
+
 8/livres à lire
 
 - entête
@@ -89,7 +90,7 @@ update... 26! T^T
 - notation personnelle
 - supprimer le livre de la sélection
 
-***********************************
+***********************************************
 9/ page amis
 
 - entête
@@ -97,7 +98,7 @@ update... 26! T^T
 - envoyer mp bouton
 - supprimer de la liste bouton
 
-************************************
+***********************************************
 
 10/ page communauté:
 
@@ -108,7 +109,8 @@ update... 26! T^T
 - rechercher avec un filtre pays, age, genre...
 - (bouton pour accéder à sa page)
 
-************************************
+***********************************************
+
 11/ page user étranger
 
 - entête
@@ -121,7 +123,7 @@ update... 26! T^T
 - ajout ami (envoi demande ami)
 - envoyer mp
   
-**********************************************
+***********************************************
 
 12/ page résultats de recherches:
  
@@ -130,14 +132,14 @@ update... 26! T^T
 
 ***********************************************
 
-14/ page de l’œuvre
+13/ page de l’œuvre
 
 - entête
 - titre, auteur, résumé, photo, commentaires, notation commune
 - liste déroulante statut (lu, en lecture, à lire, non répertorié (défaut))
 - liste déroulante score personnel (notation sur 20)
 
-************************************  
+***********************************************  
 
 14/ page A propos:
 

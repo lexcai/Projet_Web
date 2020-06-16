@@ -90,10 +90,11 @@ include_once('bdd.php');
                if ($_SESSION['table']  == 'root') {
                      
          ?>
-         <a href="./moderation_livres.php">Moderation livres</a>
-         <a href="./moderation_membres.php">Moderation membres</a>
-         <a href="./form_ajout_livres.php">Ajout de livres</a>
-
+         <div id="admliens">
+            <button><a href="./moderation_livres.php">Moderation livres</a></button>
+            <button><a href="./moderation_membres.php">Moderation membres</a></button>
+            <button><a href="./form_ajout_livres.php">Ajout de livres</a></button>
+         </div>
          <?php }
                }
       ?>
