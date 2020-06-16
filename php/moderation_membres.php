@@ -4,7 +4,7 @@ session_start();
   $query1 = $pdo->prepare('SELECT * FROM membres');
   $query1->execute();
   $liste = $query1->fetchAll(); 
-?>
+  ?>
 
 
 <!DOCTYPE html>
@@ -55,6 +55,19 @@ session_start();
           </form>
         </div>
       </div>
-    </div>
+      <tr>
+      <table>
+       <th>Pseudo</th>
+       <th>Rôle</th>
+     </tr>
+     <tbody>
+     <?php foreach ($liste as $donnees) { ?>
+       <td><?php echo $donnees['pseudo_membre']; ?></td>
+       <td><?php echo $donnees['role']; ?></td>
+       </tr>
+     <?php }?>
+     </tbody>
+     </table>
+     </div>
   </body>
 </html>

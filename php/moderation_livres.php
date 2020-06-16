@@ -54,6 +54,29 @@ session_start();
           </form>
         </div>
       </div>
+      <table>
+   <thead>
+     <tr>
+       <th>Titre</th>
+       <th>Auteur</th>
+       <th>Genre</th>
+       <th>Editeur</th>
+       <th>Date de parrution</th>
+       <th>Note</th>
+     </tr>
+      <tr>
+          <?php foreach ($liste as $donnees) { ?>
+       <td><?php echo $donnees['titre']; ?></td>
+       <td><?php echo $donnees['auteur']; ?></td>
+       <td><?php echo $donnees['genre']; ?></td>
+       <td><?php echo $donnees['editeur']; ?></td>
+       <td><?php echo $donnees['date_parrution']; ?></td>
+       <td><?php echo $donnees['note']; ?></td>
+       </tr>
+    <?php
+    }
+    ?>
+     </table>
     </div>
   </body>
 </html>
