@@ -295,7 +295,7 @@ input#file{
 }
 .more{
   text-decoration: none;
-  margin-left: 60%;
+  margin-left: 50%;
   color: rgb(37, 54, 4);
 }
 .more:hover{

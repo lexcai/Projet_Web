@@ -11,7 +11,7 @@
 
    <body class="container-fluid windows">
       <div class="container content" style="margin-top:2px;">
-         <a href="index.html"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
+         <a href="../html/index.html"><img class='logo' src="../logo/logo_lighter.png" alt="BookClub logo" /></a>
                
          <div class="title_page">Inscrivez-vous</div>
          
