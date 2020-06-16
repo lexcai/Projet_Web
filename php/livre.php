@@ -72,8 +72,8 @@
                         <div class="col-md-1 col-lg-1 col-xl-1"></div>
                     </div>
 
-                    <div class="container" style="margin-top:5px;" name="tag_box">
-                        <div name="type_tag" style="margin-left:11%" class="tag_style">
+                    <div class="container" style="margin-top:5px;padding-left:11%;padding-right:25%;" name="tag_box">
+                        <div name="type_tag" style="" class="tag_style">
                             genre<?php echo $genre?> 
                         </div>
 
@@ -98,13 +98,13 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6 col-xl-6">
-                    <h1 style="text-align:left;margin-left:0;margin-top:5%;">//TITRE//<?php echo $titre?></h1> 
-                    <h1 style="text-align:left;margin-left:0;margin-bottom:20px;">De //AUTEUR//<?php echo $auteur?></h1>
+                    <h1 style="text-align:left;margin-left:0;margin-top:5%;"><?php echo $titre?></h1> 
+                    <h1 style="text-align:left;margin-left:0;margin-bottom:20px;">De <?php echo $auteur?></h1>
 
                     <h3 style="margin-right:5%;font-size:16px;">Publié le <?php echo $date_parrution?></h3>
 
                     <h3 style="text-align:left;margin-top:10%;">Résumé</h3>
-                    <div style="width:70%;height:100px;background-color:white;border:1px solid rgba(123, 94, 56, 0.61);"><?php echo $resume?></div>
+                    <textarea style="width:70%;height:100px;background-color:white;border:1px solid rgba(123, 94, 56, 0.61);padding:1%;margin;10%;"><?php echo $resume?></textarea>
                 </div>
             </div>            
         </div>
