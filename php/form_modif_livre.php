@@ -1,9 +1,10 @@
 <?php
     include_once('bdd.php');
     session_start();
+    
     if(isset($_POST['modif_l'])) {
     $titre = $_POST['titre'];
-    $query1 = $pdo->prepare('SELECT * FROM livres');
+    $query1 = $pdo->prepare("SELECT * FROM livres WHERE titre='" . $_POST['titre'] . "'");
     $query1->execute();
     $liste_livres = $query1->fetchAll();
     foreach ($liste_livres as $livres) {
