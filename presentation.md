@@ -20,7 +20,12 @@ De même pour les commentaires pertinents sur les œuvres.
 Le site se composerait de 7 pages: 
 (enfaite on est à 14 pages haha.. )
 
+
 ![](https://cdn.discordapp.com/attachments/707230681029279768/712721908134838312/sweat.png)
+
+
+update... 26! T^T
+
 
  1. page d'entrée
  2. page connexion
