@@ -62,6 +62,19 @@ mdp =
 Pseudo = 
 mdp = 
 
+
+## Base de donnée
+
+La base de donnée se présente sous la forme ci-dessous:
+
+![](./images/bdd.png)
+
+C'est avec cette structure que le site "Bookclub peut fonctionner.
+
+## Technologies utilisées
+
+Les technologies utilisées lors de ce projet se limitent au 4 langages du web: HTML, CSS, JAVASCRIPT et PHP. Quelques logiciels ou applications tel XAMPP ou GIT, pour ne citer que ceux-ci, nous on respectivement aidé à simuler le fonctionnement du site en local (sans serveur externe) et partager notre travail au sein du groupe sur un dépot attribué.
+
 ## Tâches non fini:
 
 - Contenu personalisé en fonction des gout du membre(Home)
