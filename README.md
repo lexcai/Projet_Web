@@ -46,21 +46,21 @@ c'est a dire que root peut se connecter sur le même formulaire de connexion qu'
 ## Identifiants:
 
 - ROOT :
-Pseudo = 
-mdp = 
+Pseudo = vinny
+mdp = dbz
 
 - Membres:
-Pseudo = 
-mdp = 
+Pseudo = jean
+mdp = jean
 
-Pseudo = 
-mdp = 
+Pseudo = Morgan
+mdp = alcool
 
-Pseudo = 
-mdp = 
+Pseudo = milou
+mdp = milou
 
-Pseudo = 
-mdp = 
+Pseudo = lisa
+mdp = lisa
 
 
 ## Base de donnée
