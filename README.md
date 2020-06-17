@@ -33,7 +33,7 @@ Aller sur la page phpmyadmin
 
 Clique sur "Importer"
 
-Choisir le fichier 127_0_0_1.sql
+Choisir le fichier bookclub.sql
 
 Ouvrir une nouvelle page et saisir :
 http://localhost:8080/TP/Projet_Web/html/index.html
